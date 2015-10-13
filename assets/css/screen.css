@@ -119,7 +119,6 @@ body {
     font-family: "Merriweather", serif;
     letter-spacing: 0.01rem;
     font-size: 1.8rem;
-    line-height: 1.75em;
     color: #3A4145;
     -webkit-font-feature-settings: 'kern' 1;
     -moz-font-feature-settings: 'kern' 1;
@@ -142,7 +141,9 @@ h4, h5, h6 {
     color: #2E2E2E;
     line-height: 1.15em;
     margin: 0 0 0.4em 0;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Gotham SSm A", "Gotham SSm B";
+    font-style: italic;
+    font-weight: 800;
 }
 
 h1 {
@@ -186,6 +187,8 @@ p, ul, ol, dl {
     -moz-font-feature-settings: 'liga' 1, 'onum' 1, 'kern' 1;
     -o-font-feature-settings: 'liga' 1, 'onum' 1, 'kern' 1;
     margin: 0 0 1.75em 0;
+    font-family: "Arial";
+    font-weight: 100;
 }
 
 ol, ul {
@@ -688,7 +691,7 @@ margin on the iframe, cause it breaks stuff. */
 }
 
 body:not(.post-template) .post-title {
-    font-size: 3.6rem;
+    font-size: 3.1rem;
 }
 
 .post-title a {
@@ -708,7 +711,7 @@ body:not(.post-template) .post-title {
 .post-meta {
     display: block;
     margin: 1.75rem 0 0 0;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Gotham SSm A", "Gotham SSm B";
     font-size: 1.5rem;
     line-height: 2.2rem;
     color: #9EABB3;
@@ -739,7 +742,6 @@ body:not(.post-template) .post-title {
 
 .post-date {
     display: inline-block;
-    text-transform: uppercase;
     font-size: 1.3rem;
     white-space: nowrap;
 }
@@ -1168,7 +1170,7 @@ body:not(.post-template) .post-title {
   position: relative;
   width: 100%;
   margin: 0 auto;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Gotham SSm A", "Gotham SSm B";
   font-size: 1.3rem;
   color: #4A4A4A;
   text-align: center;
@@ -1241,7 +1243,7 @@ body:not(.post-template) .post-title {
     margin: 6rem 0 0 0;
     padding: 0.5rem 15px;
     border-top: #EBF2F6 1px solid;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Gotham SSm A", "Gotham SSm B";
     font-size: 1rem;
     line-height: 1.75em;
     color: #BBC7CC;
