@@ -1,15 +1,4 @@
-<div class="box sidebox about">
-  <div class="sidebox-title">About</div>
-  <div class="sidebox-content">
-    <p>{{@blog.description}}</p>
 
-    <!--Change this to your homepage-->
-    <p>See our latest projects at <a href="http://www.webkid.io">webkid.io</a></p>
-
-  </div>
-</div>
-
-<!--Change the links to your sites-->
 <div class="sidebox box social clearfix">
   <ul>
     <a href="https://www.facebook.com/siz.io" target="_blank" class="social-item fb"><li><i class="fa fa-facebook"></i></li></a>
@@ -24,6 +13,15 @@
 </div>
 
 <div class="box sidebox latest-articles">
+  <div class="sidebox-title">Most Popular</div>
+  <div class="sidebox-content loading">
+    <div class="loader">
+    </div>
+  </div>
+</div>
+
+
+<div class="box sidebox latest-articles">
   <div class="sidebox-title">Latest Articles</div>
   <div class="sidebox-content loading">
     <div class="loader">
@@ -31,3 +29,9 @@
   </div>
 </div>
 
+<div class="box sidebox about">
+  <div class="sidebox-title">About</div>
+  <div class="sidebox-content">
+    <p>{{@blog.description}}</p>
+  </div>
+</div>
