@@ -141,7 +141,7 @@ h4, h5, h6 {
     color: #2E2E2E;
     line-height: 1.15em;
     margin: 0 0 0.4em 0;
-    font-family: "Gotham SSm A", "Gotham SSm B";
+    font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
     font-style: italic;
     font-weight: 800;
 }
@@ -455,7 +455,7 @@ margin on the iframe, cause it breaks stuff. */
 
 .main-nav a {
     text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
 }
 
 /* Create a bouncing scroll-down arrow on homepage with cover image */
@@ -630,7 +630,7 @@ margin on the iframe, cause it breaks stuff. */
     font-size: 5rem;
     letter-spacing: -1px;
     font-weight: 700;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
     color: #fff;
 }
 
@@ -711,7 +711,7 @@ body:not(.post-template) .post-title {
 .post-meta {
     display: block;
     margin: 1.75rem 0 0 0;
-    font-family: "Gotham SSm A", "Gotham SSm B";
+    font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
     font-size: 1.5rem;
     line-height: 2.2rem;
     color: #9EABB3;
@@ -802,7 +802,7 @@ body:not(.post-template) .post-title {
   border-radius: 2px;
   -webkit-user-select: none;
   text-decoration:none;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
 }
 
 .btn-blue{
@@ -1128,7 +1128,7 @@ body:not(.post-template) .post-title {
 /* Location, website, and link */
 .author-profile .author-meta {
     margin: 2rem 0;
-    font-family: "Merriweather", serif;
+    font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
     letter-spacing: 0.01rem;
     font-size: 1.7rem;
 }
@@ -1171,7 +1171,7 @@ body:not(.post-template) .post-title {
   position: relative;
   width: 100%;
   margin: 0 auto;
-  font-family: "Gotham SSm A", "Gotham SSm B";
+  font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
   font-size: 1.3rem;
   color: #4A4A4A;
   text-align: center;
@@ -1180,7 +1180,7 @@ body:not(.post-template) .post-title {
 }
 
 .pagination a {
-    color: #4A4A4A;
+    color: #ff0002;
     transition: all 0.2s ease;
 }
 
@@ -1190,7 +1190,6 @@ body:not(.post-template) .post-title {
     position: absolute;
     display: inline-block;
     padding: 0 15px;
-    border: #4A4A4A 1px solid;
     text-decoration: none;
     transition: border ease 0.3s;
 }
@@ -1244,7 +1243,7 @@ body:not(.post-template) .post-title {
     margin: 6rem 0 0 0;
     padding: 0.5rem 15px;
     border-top: #EBF2F6 1px solid;
-    font-family: "Gotham SSm A", "Gotham SSm B";
+    font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
     font-size: 1rem;
     line-height: 1.75em;
     color: #BBC7CC;
