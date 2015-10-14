@@ -251,6 +251,10 @@ a {
   color: #fff;
 }
 
+.social-item.fb {
+  background: #39599F;
+}
+
 .social-item.rss {
   background: #f26522;
 }
