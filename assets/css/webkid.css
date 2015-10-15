@@ -287,11 +287,18 @@ a {
   list-style-type: none;
 }
 
-
+i.fa.fa-facebook {
+  margin-top: 1px;
+}
 
 .box.is-link:hover {
   box-shadow: 0 2px 4px rgba(50,50,50,0.15);
   cursor: pointer;
+}
+
+section.post-content {
+  max-width: 500px;
+  margin: auto;
 }
 
 #article {
