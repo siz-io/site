@@ -297,7 +297,7 @@ i.fa.fa-facebook {
 }
 
 section.post-content {
-  width: 500px;
+  max-width: 500px;
   margin: auto;
 }
 
