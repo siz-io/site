@@ -19,3 +19,7 @@ node_modules
 projectFilesBackup
 
 .DS_Store
+
+# We don't want these, since we use MySQL and S3 for storage
+/data
+/images
