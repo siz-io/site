@@ -14,3 +14,4 @@ RUN npm install -g logentries-piper
 USER user
 ENTRYPOINT []
 CMD npm start 2>&1 | logentries-piper
+EXPOSE 2368
