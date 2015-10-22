@@ -26,4 +26,5 @@ Use the CLI as described [here](http://docs.aws.amazon.com/elasticbeanstalk/late
 - `eb deploy` ... deploy
 
 ## Useful links
-Uses [Ghost](https://ghost.org/)
+- Uses [Ghost](https://ghost.org/)
+- Theme based on [Webkid's](https://github.com/wbkd/ghost-wbkd)
