@@ -10,6 +10,7 @@
 - `DB_USERNAME`
 - `DB_PASSWORD`
 - `DB_NAME`
+- `LOGENTRIES_TOKEN`
 
 ## Commands
 ### Run locally
