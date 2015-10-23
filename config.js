@@ -38,7 +38,7 @@ conf.database = env.DB_HOST ? {
   client: 'mysql',
   connection: {
     host: env.DB_HOST,
-    user: env.DB_USERNAME,
+    user: env.DB_USER,
     password: env.DB_PASSWORD,
     database: env.DB_NAME
   }
