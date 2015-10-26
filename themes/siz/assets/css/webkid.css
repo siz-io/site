@@ -16,7 +16,6 @@ body * {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center 37%;
-  margin-bottom: 20px;
   box-shadow: 0 1px 2px rgba(50, 50, 50, 0.2);
 }
 
@@ -39,13 +38,8 @@ body * {
   height: 30px;
 }
 
-.header .sub-logo {
-  font-size: 12px;
-  margin-top: 4px;
-  letter-spacing: 3px;
-  color: #fff;
-  font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
-}
+
+
 .fb_iframe_widget,
 .fb_iframe_widget span,
 .fb_iframe_widget span iframe[style] {
@@ -71,6 +65,48 @@ a {
 .container {
   max-width: 740px;
   margin: auto;
+}
+
+.taglist-wrapper {
+  width: 100%;
+  background: #FFF;
+  height: 35px;
+  line-height: 30px;
+  padding: 0;
+}
+
+ul.taglist {
+  padding: 0 1em;
+  margin: 0;
+  list-style: none;
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+ul.taglist li {
+  margin: 0;
+  padding: .2em .5em;
+  text-transform: uppercase;
+  font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
+  font-weight: 500;
+  color: #111;
+  font-size: 12px;
+  float: left;
+  cursor: pointer;
+  transition: none;
+}
+ul.taglist li:hover {
+  background: #FF0002;
+  cursor: pointer;
+}
+ul.taglist li:hover a {
+  color: #fff;
+}
+
+ul.taglist li a {
+  text-decoration: none;
+  transition: none;
+  cursor: pointer;
 }
 
 
@@ -363,7 +399,6 @@ i.fa.fa-facebook {
 
 section.post-content {
   max-width: 500px;
-  margin: auto;
 }
 
 #article {
