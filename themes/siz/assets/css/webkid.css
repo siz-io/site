@@ -399,6 +399,7 @@ i.fa.fa-facebook {
 
 section.post-content {
   max-width: 500px;
+  margin: auto;
 }
 
 #article {

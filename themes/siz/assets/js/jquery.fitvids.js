@@ -10,7 +10,6 @@
 */
 
 (function($){
-  console.log("fitvids");
   "use strict";
 
   jQuery.fn.fitVids = function( options ) {

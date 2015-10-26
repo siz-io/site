@@ -868,7 +868,7 @@ body:not(.post-template) .post-title {
 .post-content img {
     display: block;
     max-width: 100%;
-    height: auto;
+    height: 394px;
     margin: 0 auto;
     padding: 0.6em 0;
 }

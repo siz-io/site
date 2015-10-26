@@ -14,8 +14,6 @@
 */
 // Avoid collisions
 if(window.jQuery) (function($){
-   console.log("xml2json");
- // Add function to jQuery namespace
  $.extend({
   
   // converts xml documents and xml text to json object
