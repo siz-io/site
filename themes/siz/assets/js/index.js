@@ -93,6 +93,5 @@
                 $htmlBody.stop(true, false).animate({scrollTop: ($(this.hash).offset().top) }, allOptions.speed);
             }
         });
-
     };
 })(jQuery, 'smartresize');

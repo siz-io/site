@@ -12,11 +12,29 @@
 
 </div>
 
+
 <div class="box sidebox latest-articles">
   <div class="sidebox-title">Most Popular</div>
-  <div class="sidebox-content loading">
-    <div class="loader">
-    </div>
+  <div class="most">
+    {{#foreach posts}}
+      {{#if featured}}
+      <a class="article-link" href="{{url}}">
+        {{#if image}}
+            <section class="post-image" style="background-image:url({{image}})"></section>
+        {{/if}}
+        <header class="post-header">
+            <h2 class="post-title">{{{title}}}</h2>
+        </header>
+        <section class="post-excerpt">
+       <p>{{excerpt words="26"}}</p>
+        </section>
+        
+        <footer class="post-meta">
+            <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time>
+        </footer>
+      </a>
+      {{/if}}
+    {{/foreach}}
   </div>
 </div>
 

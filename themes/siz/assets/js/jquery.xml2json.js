@@ -13,8 +13,8 @@
  'xml to json' great parsers (see below) which allows for both 'simple' and 'extended' parsing modes.
 */
 // Avoid collisions
-;if(window.jQuery) (function($){
- 
+if(window.jQuery) (function($){
+   console.log("xml2json");
  // Add function to jQuery namespace
  $.extend({
   
