@@ -48,6 +48,11 @@ body * {
   margin-bottom: 40px;
 }
 
+.fb_iframe_widget span {
+  margin-top: 15px;
+}
+
+
 img {
   max-width: 100%;
 }
