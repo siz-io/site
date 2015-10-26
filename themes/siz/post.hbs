@@ -5,8 +5,8 @@
 
 {{! Everything inside the #post tags pulls data from the post }}
 {{#post}}
-<link rel="stylesheet" href="/assets/css/prism.css">
-<script src="/assets/js/prism.js"></script>
+<link rel="stylesheet" type="text/css" href="{{asset "css/prism.css"}}" />
+<script type="text/javascript" src="{{asset "js/prism.js"}}"></script>
 
 {{> "header"}}
 
