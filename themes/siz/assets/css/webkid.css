@@ -75,9 +75,10 @@ a {
 .taglist-wrapper {
   width: 100%;
   background: #FFF;
-  height: 35px;
-  line-height: 30px;
+  height: 45px;
+  line-height: 40px;
   padding: 0;
+  border-bottom: 1px solid #E8E8E8;
 }
 
 ul.taglist {
@@ -94,14 +95,15 @@ ul.taglist li {
   text-transform: uppercase;
   font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
   font-weight: 500;
+  font-style: italic;
   color: #111;
-  font-size: 12px;
+  font-size: 14px;
   float: left;
   cursor: pointer;
   transition: none;
 }
 ul.taglist li:hover {
-  background: #FF0002;
+  background: #ED2747;
   cursor: pointer;
 }
 ul.taglist li:hover a {
@@ -380,7 +382,7 @@ ul.taglist li a {
 }
 
 .social-item.home {
-  background: #ff0002;
+  background: #FB2243;
 }
 
 .social-item.github {
