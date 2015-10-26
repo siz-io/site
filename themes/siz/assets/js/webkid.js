@@ -13,18 +13,20 @@ $(function() {
     var $parent = $('.sidebox.latest-articles .sidebox-content');
     if(!$parent) {return};
 
-    for(var i = 0; i < Math.min(posts.length, 5); i++) {
-      var p = posts[i];
-      var date = new Date(p.pubDate);
-      var dateStr = date.getDate() + ' ' + months[date.getMonth()] + ' ' + date.getFullYear();
-      var $a = $('<a href="' + p.link + '"><div class="date">' + dateStr + '</div><div>' + p.title + '</div></a>');
-      if(i == 4) {
-        $a.addClass('last');
+    if posts {    
+      for(var i = 0; i < Math.min(posts.length, 5); i++) {
+        var p = posts[i];
+        var date = new Date(p.pubDate);
+        var dateStr = date.getDate() + ' ' + months[date.getMonth()] + ' ' + date.getFullYear();
+        var $a = $('<a href="' + p.link + '"><div class="date">' + dateStr + '</div><div>' + p.title + '</div></a>');
+        if(i == 4) {
+          $a.addClass('last');
+        }
+        $parent.append($a);
       }
-      $parent.append($a);
+      
+      $parent.removeClass('loading');
     }
-    
-    $parent.removeClass('loading');
   }
 
   $.ajax({
