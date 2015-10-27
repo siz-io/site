@@ -38,6 +38,31 @@ body * {
   height: 30px;
 }
 
+.animate {
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  -ms-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transform: translate(0, 221px);
+  -moz-transform: translate(0, 221px);
+  -ms-transform: translate(0, 221px);
+  -o-transform: translate(0, 221px);
+  transform: translate(0, 221px);
+}
+
+.animateBack {
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  -ms-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
 
 
 .fb_iframe_widget,
@@ -72,6 +97,10 @@ a {
   margin: auto;
 }
 
+.mobile-taglist-wrapper {
+  display: none;
+}
+
 .taglist-wrapper {
   width: 100%;
   background: #FFF;
@@ -95,7 +124,6 @@ ul.taglist li {
   text-transform: uppercase;
   font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
   font-weight: 500;
-  font-style: italic;
   color: #111;
   font-size: 14px;
   float: left;
@@ -104,6 +132,7 @@ ul.taglist li {
 }
 ul.taglist li:hover {
   background: #ED2747;
+  font-style: italic;
   cursor: pointer;
 }
 ul.taglist li:hover a {
@@ -115,8 +144,6 @@ ul.taglist li a {
   transition: none;
   cursor: pointer;
 }
-
-
 
 #content {
   width: 100%;
@@ -475,8 +502,51 @@ a.article-link:visited {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 750px) {
   #taglist {
     display: none;
+  }
+
+  .taglist-wrapper {
+    display: none;
+  }
+
+  #mobile-taglist {
+    display: block;
+  }
+
+  .mobile-taglist-wrapper {
+    display: block;
+    width: 100%;
+    background: #3E4150;
+    padding: 0;
+    margin-top: -221px;
+  }
+
+  ul.mobile-taglist {
+    padding: 40px;
+    list-style: none;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  ul.mobile-taglist li {
+    margin: 0;
+    padding: .2em .5em;
+    text-transform: uppercase;
+    font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
+    font-weight: 500;
+    color: #FFF;
+    font-size: 14px;
+    cursor: pointer;
+    transition: none;
+    text-align: center;
+  }
+
+  ul.mobile-taglist li a {
+    text-decoration: none;
+    transition: none;
+    cursor: pointer;
+    color: #FFF;
   }
 }
