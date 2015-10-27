@@ -38,7 +38,7 @@ body * {
   height: 30px;
 }
 
-.animate {
+/*.animate {
   -webkit-transition-duration: 0.5s;
   -moz-transition-duration: 0.5s;
   -o-transition-duration: 0.5s;
@@ -62,8 +62,11 @@ body * {
   -ms-transform: translate(0, 0);
   -o-transform: translate(0, 0);
   transform: translate(0, 0);
-}
+}*/
 
+#bars {
+  display: none;
+}
 
 .fb_iframe_widget,
 .fb_iframe_widget span,
@@ -505,6 +508,10 @@ a.article-link:visited {
 @media (max-width: 750px) {
   #taglist {
     display: none;
+  }
+
+  #bars {
+    display: block;
   }
 
   .taglist-wrapper {
