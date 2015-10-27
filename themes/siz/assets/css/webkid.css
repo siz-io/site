@@ -213,6 +213,7 @@ ul.taglist li a {
   height: 300px;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 #articles .post header,
