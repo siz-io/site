@@ -360,18 +360,19 @@ table.plain tbody > tr:nth-child(odd) > th {
    background: transparent;
 }
 
-iframe, .fluid-width-video-wrapper {
-    display: block;
-    margin: 1.75em 0;
+.fluid-width-video-wrapper {
+    position: relative;
+    width: 100%;
     height:17.5em;
-    width:100%;
-    border:none;
+    padding-bottom: 56.25%;
 }
 
-/* When a video is inside the fitvids wrapper, drop the
-margin on the iframe, cause it breaks stuff. */
-.fluid-width-video-wrapper iframe {
-    margin: 0;
+iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -1297,5 +1298,21 @@ body:not(.post-template) .post-title {
         height: 40%;
         padding: 15% 0;
     }
+
+    .fluid-width-video-wrapper {
+    position: relative;
+    max-width: 100%;
+    height:17.5em;
+    padding-bottom: 56.25%;
+}
+
+iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 125%;
+    height: 100%;
+    margin-left: -33px;
+}
 
     .

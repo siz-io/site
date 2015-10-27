@@ -38,36 +38,6 @@ body * {
   height: 30px;
 }
 
-/*.animate {
-  -webkit-transition-duration: 0.5s;
-  -moz-transition-duration: 0.5s;
-  -o-transition-duration: 0.5s;
-  -ms-transition-duration: 0.5s;
-  transition-duration: 0.5s;
-  -webkit-transform: translate(0, 221px);
-  -moz-transform: translate(0, 221px);
-  -ms-transform: translate(0, 221px);
-  -o-transform: translate(0, 221px);
-  transform: translate(0, 221px);
-}
-
-.animateBack {
-  -webkit-transition-duration: 0.5s;
-  -moz-transition-duration: 0.5s;
-  -o-transition-duration: 0.5s;
-  -ms-transition-duration: 0.5s;
-  transition-duration: 0.5s;
-  -webkit-transform: translate(0, 0);
-  -moz-transform: translate(0, 0);
-  -ms-transform: translate(0, 0);
-  -o-transform: translate(0, 0);
-  transform: translate(0, 0);
-}*/
-
-#bars {
-  display: none;
-}
-
 .fb_iframe_widget,
 .fb_iframe_widget span,
 .fb_iframe_widget span iframe[style] {
@@ -98,10 +68,6 @@ a {
 .container {
   max-width: 740px;
   margin: auto;
-}
-
-.mobile-taglist-wrapper {
-  display: none;
 }
 
 .taglist-wrapper {
@@ -188,7 +154,6 @@ ul.taglist li a {
   border-radius: 50%;
   margin: 20px auto;
 }
-
 
 @keyframes rotation {
   to {
@@ -506,54 +471,5 @@ a.article-link:visited {
 }
 
 @media (max-width: 750px) {
-  #taglist {
-    display: none;
-  }
 
-  #bars {
-    display: block;
-  }
-
-  .taglist-wrapper {
-    display: none;
-  }
-
-  #mobile-taglist {
-    display: block;
-  }
-
-  .mobile-taglist-wrapper {
-    display: block;
-    width: 100%;
-    background: #3E4150;
-    padding: 0;
-    margin-top: -221px;
-  }
-
-  ul.mobile-taglist {
-    padding: 40px;
-    list-style: none;
-    width: 100%;
-    margin: 0 auto;
-  }
-
-  ul.mobile-taglist li {
-    margin: 0;
-    padding: .2em .5em;
-    text-transform: uppercase;
-    font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
-    font-weight: 500;
-    color: #FFF;
-    font-size: 14px;
-    cursor: pointer;
-    transition: none;
-    text-align: center;
-  }
-
-  ul.mobile-taglist li a {
-    text-decoration: none;
-    transition: none;
-    cursor: pointer;
-    color: #FFF;
-  }
 }
