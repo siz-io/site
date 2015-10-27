@@ -1,7 +1,6 @@
 $(function() {
 
   var months = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'NOV', 'DEC'];
-
   function renderSite(data) {
     data = $.xml2json(data);
     var posts = data.channel.item;

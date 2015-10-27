@@ -47,7 +47,7 @@ body * {
 }
 
 .fb_iframe_widget span {
-  margin-top: 15px;
+  margin-top: 40px;  
 }
 
 
@@ -471,5 +471,7 @@ a.article-link:visited {
 }
 
 @media (max-width: 750px) {
-
+  #taglist .mobile-hidden {
+    display: none;
+  }
 }
