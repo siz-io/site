@@ -1274,7 +1274,6 @@ body:not(.post-template) .post-title {
     float: left;
 }
 
-
 /* ==========================================================================
    10. Media Queries - Smaller than 900px
    ========================================================================== */
@@ -1299,20 +1298,25 @@ body:not(.post-template) .post-title {
         padding: 15% 0;
     }
 
-    .fluid-width-video-wrapper {
-    position: relative;
-    max-width: 100%;
-    height:17.5em;
-    padding-bottom: 56.25%;
-}
+    .post-content .full-img {
+        max-width: 100%;
+        margin: 0 auto;
+        height: auto;
+    }
 
-iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    min-width: 125%;
-    height: 100%;
-    margin-left: -33px;
-}
+    .fluid-width-video-wrapper {
+        position: relative;
+        max-width: 100%;
+        height: auto;
+        padding-bottom: 56.25%;
+    }
+
+    iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        min-width: 100%;
+        height: 100%;
+    }
 
     .
