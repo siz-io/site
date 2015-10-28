@@ -47,6 +47,12 @@
             } else {
                 $this.removeClass('full-img');
             }
+
+            if (imageWidth >= 210) {
+                $this.addClass('img-inline');
+            } else {
+                $this.removeClass('img-inline');
+            }
         }
 
         var $img = $("img").on('load', updateImageWidth);
