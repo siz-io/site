@@ -100,7 +100,7 @@ ul.taglist li {
   transition: none;
 }
 ul.taglist li:hover {
-  background: #ED2747;
+  background: #ff0002;
   font-style: italic;
   cursor: pointer;
 }
@@ -378,7 +378,7 @@ ul.taglist li a {
 }
 
 .social-item.home {
-  background: #FB2243;
+  background: #ff0002;
 }
 
 .social-item.github {
