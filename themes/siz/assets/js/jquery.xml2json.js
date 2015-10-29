@@ -13,9 +13,7 @@
  'xml to json' great parsers (see below) which allows for both 'simple' and 'extended' parsing modes.
 */
 // Avoid collisions
-;if(window.jQuery) (function($){
- 
- // Add function to jQuery namespace
+if(window.jQuery) (function($){
  $.extend({
   
   // converts xml documents and xml text to json object

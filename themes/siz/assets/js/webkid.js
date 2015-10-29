@@ -1,11 +1,9 @@
 $(function() {
 
   var months = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'];
-
   function renderSite(data) {
     data = $.xml2json(data);
     var posts = data.channel.item;
-   
     renderLatestArticles(posts);
   }
 
@@ -30,7 +28,11 @@ $(function() {
   $.ajax({
     dataType: 'xml',
     url: '/rss',
-    type: 'GET'
-  }).success(renderSite);
+    type: 'GET',
+    success: renderSite,
+    error: function (err) {
+      console.log(err);
+    }
+  });
 
 });
