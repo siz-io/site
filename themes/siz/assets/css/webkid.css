@@ -405,8 +405,10 @@ section.post-content {
   margin: auto;
 }
 
-section.post-content p img:nth-child(1) {
-  margin-left: 30px;
+section.post-content p {
+  display: block;
+  width: 440px;
+  margin: auto;
 }
 
 #article {
@@ -478,10 +480,6 @@ a.article-link:visited {
 @media (max-width: 750px) {
   #taglist .mobile-hidden {
     display: none;
-  }
-
-  section.post-content p img:nth-child(1) {
-    margin-left: 0;
   }
 
   section.post-content p {
