@@ -9,11 +9,10 @@
 *
 */
 
-(function( $ ){
-
+(function($){
   "use strict";
 
-  $.fn.fitVids = function( options ) {
+  jQuery.fn.fitVids = function( options ) {
     var settings = {
       customSelector: null
     };
