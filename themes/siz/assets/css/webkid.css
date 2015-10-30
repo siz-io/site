@@ -483,6 +483,11 @@ a.article-link:visited {
   }
 
   section.post-content p {
-    margin-left: 30px;
+    margin-left: 0;
+    width: auto;
+  }
+
+  .post-content .img-inline {
+    display: block;
   }
 }

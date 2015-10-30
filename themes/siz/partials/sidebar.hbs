@@ -15,6 +15,7 @@
 <div class="box sidebox latest-articles">
   <div class="sidebox-title">Most Popular</div>
   <div class="most">
+    {{#if posts}}
     {{#foreach posts}}
       {{#if featured}}
         <a class="article-link" href="{{url}}">
@@ -34,6 +35,9 @@
         </a>
       {{/if}}
     {{/foreach}}
+    {{else}}
+      <p>Unable to load posts</p>
+    {{/if}}
   </div>
 </div>
 
