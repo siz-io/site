@@ -407,7 +407,7 @@ section.post-content {
 
 section.post-content p {
   display: block;
-  width: 440px;
+  text-align: center;
   margin: auto;
 }
 
