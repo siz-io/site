@@ -405,8 +405,10 @@ section.post-content {
   margin: auto;
 }
 
-section.post-content p img:nth-child(1) {
-  margin-left: 30px;
+section.post-content p {
+  display: block;
+  text-align: center;
+  margin: auto;
 }
 
 #article {
@@ -480,11 +482,12 @@ a.article-link:visited {
     display: none;
   }
 
-  section.post-content p img:nth-child(1) {
+  section.post-content p {
     margin-left: 0;
+    width: auto;
   }
 
-  section.post-content p {
-    margin-left: 30px;
+  .post-content .img-inline {
+    display: block;
   }
 }
