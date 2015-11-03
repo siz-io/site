@@ -9,6 +9,32 @@ body * {
   -o-box-sizing: border-box;
 }
 
+em {
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+p {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.thumb {
+  display: block;
+  height: auto;
+  width: 100%;
+  margin: auto;
+  border-radius: 2px;
+  margin-bottom: 10px;
+}
+
+.thumbSpan {
+  display: block;
+  text-align: center;
+}
+
 .header {
   text-align: center;
   padding-bottom: 10px;
@@ -259,6 +285,11 @@ ul.taglist li a {
   background: #fff;
   padding: 1em;
   box-shadow: 0 1px 2px rgba(50,50,50,0.08);
+}
+
+.sidebox.about .most {
+  font-size: .9em;
+  line-height: 1.7;
 }
 
 .sidebox {
