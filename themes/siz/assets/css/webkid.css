@@ -21,6 +21,20 @@ p {
   margin-bottom: 20px;
 }
 
+.thumb {
+  display: block;
+  height: auto;
+  width: 100%;
+  margin: auto;
+  border-radius: 2px;
+  margin-bottom: 10px;
+}
+
+.thumbSpan {
+  display: block;
+  text-align: center;
+}
+
 .header {
   text-align: center;
   padding-bottom: 10px;
