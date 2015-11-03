@@ -29,10 +29,7 @@ $(function() {
     dataType: 'xml',
     url: '/rss',
     type: 'GET',
-    success: renderSite,
-    error: function (err) {
-      console.log(err);
-    }
+    success: renderSite
   });
 
 });
