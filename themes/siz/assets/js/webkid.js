@@ -15,7 +15,8 @@ $(function() {
       var p = posts[i];
       var date = new Date(p.pubDate);
       var dateStr = date.getDate() + ' ' + months[date.getMonth()] + ' ' + date.getFullYear();
-      var $a = $('<a href="' + p.link + '"><div class="date">' + dateStr + '</div><div><img src="' + p.content.url +'" class="thumb" /><span class="thumbSpan">' + p.title + '</span> ' + '</div></a>');
+      var imgThumbnail = p.content ? '<img src="' + p.content.url + '" class="thumb" />' : '';
+      var $a = $('<a href="' + p.link + '"><div class="date">' + dateStr + '</div><div>' + imgThumbnail + '<span class="thumbSpan">' + p.title + '</span> ' + '</div></a>');
       
       if(i == 4) {
         $a.addClass('last');
