@@ -362,8 +362,7 @@ table.plain tbody > tr:nth-child(odd) > th {
 
 .fluid-width-video-wrapper {
     position: relative;
-    width: 100%;
-    height:17.5em;
+    width: 500px;
     padding-bottom: 56.25%;
 }
 
@@ -371,7 +370,7 @@ iframe {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 500px;
     height: 100%;
 }
 
@@ -1317,7 +1316,7 @@ body:not(.post-template) .post-title {
 
     .fluid-width-video-wrapper {
         position: relative;
-        max-width: 100%;
+        max-width: 500px;
         height: auto;
         padding-bottom: 56.25%;
     }

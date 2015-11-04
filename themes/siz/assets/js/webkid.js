@@ -23,7 +23,6 @@ $(function() {
       }
       $parent.append($a);
     }
-    
     $parent.removeClass('loading');
   }
 
