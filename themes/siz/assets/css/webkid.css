@@ -21,6 +21,11 @@ p {
   margin-bottom: 20px;
 }
 
+strong {
+  display: block;
+  padding-bottom: 10px;
+}
+
 .thumb {
   display: block;
   height: auto;
@@ -438,7 +443,11 @@ section.post-content {
 
 section.post-content p {
   display: block;
+  width: 500px;
   margin: auto;
+  font-size: 21px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 #article {
