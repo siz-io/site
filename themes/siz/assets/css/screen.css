@@ -695,7 +695,7 @@ body:not(.post-template) .post-title {
     font-size: 3.1rem;
 }
 
-.post-title-most {
+.featured-post-title {
     text-align: center;
     font-size: 18px;
     font-weight: bold;
