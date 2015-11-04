@@ -19,11 +19,9 @@
       {{#foreach posts}}
         {{#if featured}}
           <a class="article-link" href="{{url}}">
-            {{#if image}}
-              <section class="post-image" style="background-image:url({{image}})"></section>
-            {{/if}}
+            <div id="thumb-container"><img src="{{image}}" class="thumb" /></div>
             <header class="post-header">
-              <h2 class="post-title">{{{title}}}</h2>
+              <h2 class="post-title-most">{{{title}}}</h2>
             </header>
             <section class="post-excerpt">
               <p>{{excerpt words="26"}}</p>

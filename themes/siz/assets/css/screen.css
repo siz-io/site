@@ -695,6 +695,11 @@ body:not(.post-template) .post-title {
     font-size: 3.1rem;
 }
 
+.post-title-most {
+    text-align: center;
+    font-size: 30px;
+}
+
 .post-title a {
     text-decoration: none;
 }
