@@ -445,6 +445,7 @@ section.post-content p {
   display: block;
   width: 500px;
   margin: auto;
+  font-size: 21px;
   padding-top: 10px;
   padding-bottom: 10px;
 }
