@@ -50,38 +50,40 @@
                 $this.removeClass('full-img');
             }
             
-            if ($postImg[0].clientWidth < $postImg[0].clientHeight) {
-                    console.log($postImg);
-                switch ($postImg.length) {
-                    case $postImg.length = 1:
-                        break;
-                    case $postImg.length = 2:
-                        $postImg.css({
-                            "width": "247px",
-                            "display": "inline-block"
-                        });
-                    case $postImg.length = 3:
-                        $postImg.css({
-                            "width": "161px",
-                            "display": "inline-block"
-                        });
-                    case $postImg.length = 4:
-                        $postImg.css({
-                            "width": "247px",
-                            "display": "inline-block"
-                        });
-                    case $postImg.length = 6:
-                        $postImg.css({
-                            "width": "247px",
-                            "display": "inline-block"
-                        });
-                    case $postImg.length = 8:
-                        $postImg.css({
-                            "width": "247px",
-                            "display": "inline-block"
-                        });
-                    default:
-                        break;
+            if ($postContent.length != 0) {
+                console.log("lol");
+                if ($postImg[0].clientWidth < $postImg[0].clientHeight) {
+                    switch ($postImg.length) {
+                        case $postImg.length = 1:
+                            break;
+                        case $postImg.length = 2:
+                            $postImg.css({
+                                "width": "247px",
+                                "display": "inline-block"
+                            });
+                        case $postImg.length = 3:
+                            $postImg.css({
+                                "width": "161px",
+                                "display": "inline-block"
+                            });
+                        case $postImg.length = 4:
+                            $postImg.css({
+                                "width": "247px",
+                                "display": "inline-block"
+                            });
+                        case $postImg.length = 6:
+                            $postImg.css({
+                                "width": "247px",
+                                "display": "inline-block"
+                            });
+                        case $postImg.length = 8:
+                            $postImg.css({
+                                "width": "247px",
+                                "display": "inline-block"
+                            });
+                        default:
+                            break;
+                    }
                 }
             }
         }
