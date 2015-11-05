@@ -11,19 +11,23 @@ body * {
 
 em {
   display: block;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  line-height: 35px;
 }
 
 p {
   display: block;
   margin-top: 20px;
   margin-bottom: 20px;
+  line-height: 35px;
 }
 
 strong {
   display: block;
-  padding-bottom: 10px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  line-height: 35px;
 }
 
 .thumb {
@@ -37,7 +41,6 @@ strong {
 
 .thumb-span {
   display: block;
-  text-align: center;
 }
 
 .header {
@@ -441,13 +444,19 @@ section.post-content {
   margin: auto;
 }
 
+section.post-content img {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 section.post-content p {
   display: block;
   width: 500px;
   margin: auto;
   font-size: 21px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  line-height: 35px;
 }
 
 #article {

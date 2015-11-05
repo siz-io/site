@@ -35,6 +35,8 @@
     $document.ready(function () {
 
         var $postContent = $(".post-content");
+        $(".post-content img").addClass('post-img');
+        var $postImg = $(".post-img");
         $postContent.fitVids();
 
         function updateImageWidth() {
@@ -47,11 +49,40 @@
             } else {
                 $this.removeClass('full-img');
             }
-
-            if (imageWidth >= 210) {
-                $this.addClass('img-inline');
-            } else {
-                $this.removeClass('img-inline');
+            
+            if ($postImg[0].clientWidth < $postImg[0].clientHeight) {
+                    console.log($postImg);
+                switch ($postImg.length) {
+                    case $postImg.length = 1:
+                        break;
+                    case $postImg.length = 2:
+                        $postImg.css({
+                            "width": "247px",
+                            "display": "inline-block"
+                        });
+                    case $postImg.length = 3:
+                        $postImg.css({
+                            "width": "161px",
+                            "display": "inline-block"
+                        });
+                    case $postImg.length = 4:
+                        $postImg.css({
+                            "width": "247px",
+                            "display": "inline-block"
+                        });
+                    case $postImg.length = 6:
+                        $postImg.css({
+                            "width": "247px",
+                            "display": "inline-block"
+                        });
+                    case $postImg.length = 8:
+                        $postImg.css({
+                            "width": "247px",
+                            "display": "inline-block"
+                        });
+                    default:
+                        break;
+                }
             }
         }
 
