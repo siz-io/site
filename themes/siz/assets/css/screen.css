@@ -697,7 +697,6 @@ body:not(.post-template) .post-title {
 }
 
 .featured-post-title {
-    text-align: center;
     font-size: 18px;
     font-weight: bold;
     font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
