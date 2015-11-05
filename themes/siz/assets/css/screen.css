@@ -360,17 +360,19 @@ table.plain tbody > tr:nth-child(odd) > th {
    background: transparent;
 }
 
-.fluid-width-video-wrapper {
-    position: relative;
+div.fluid-width-video-wrapper {
     width: 500px;
-    padding-bottom: 56.25%;
+    margin: auto;
+    position: relative;
+    padding: 0;
+
 }
 
-iframe {
-    position: absolute;
+div.fluid-width-video-wrapper iframe {
     top: 0;
     left: 0;
     width: 500px;
+    margin: auto;
     height: 100%;
 }
 
