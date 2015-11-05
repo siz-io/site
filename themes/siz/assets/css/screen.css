@@ -1315,18 +1315,18 @@ body:not(.post-template) .post-title {
         height: auto;
     }
 
-    .fluid-width-video-wrapper {
+    div.fluid-width-video-wrapper {
+        width: 100%;
+        margin: auto;
         position: relative;
-        max-width: 500px;
-        height: auto;
-        padding-bottom: 56.25%;
+        padding: 0;
     }
 
-    iframe {
-        position: absolute;
+    div.fluid-width-video-wrapper iframe {
         top: 0;
         left: 0;
-        min-width: 100%;
+        width: 100%;
+        margin: auto;
         height: 100%;
     }
 
