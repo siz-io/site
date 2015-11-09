@@ -50,7 +50,7 @@
                 $this.removeClass('full-img');
             }
             
-            if ($postContent.length != 0) {
+            if ($postImg.length != 0) {
                 if ($postImg[0].clientWidth < $postImg[0].clientHeight) {
                     switch ($postImg.length) {
                         case $postImg.length = 1:
