@@ -40,9 +40,9 @@
         $postContent.fitVids();
 
         function updateImageWidth() {
-            var $this = $(this),
-                contentWidth = $postContent.outerWidth(), // Width of the content
-                imageWidth = this.naturalWidth; // Original image resolution
+            var $this = $(this);
+            var contentWidth = $postContent.outerWidth(); // Width of the content
+            var imageWidth = this.naturalWidth; // Original image resolution
 
             if (imageWidth >= contentWidth) {
                 $this.addClass('full-img');
@@ -120,11 +120,11 @@
 
         allOptions.elem.click(function (event) {
             event.preventDefault();
-            var $this = $(this),
-                $htmlBody = $('html, body'),
-                offset = ($this.attr('data-offset')) ? $this.attr('data-offset') : false,
-                position = ($this.attr('data-position')) ? $this.attr('data-position') : false,
-                toMove;
+            var $this = $(this);
+            var $htmlBody = $('html, body');
+            var offset = ($this.attr('data-offset')) ? $this.attr('data-offset') : false;
+            var position = ($this.attr('data-position')) ? $this.attr('data-position') : false;
+            var toMove;
 
             if (offset) {
                 toMove = parseInt(offset);

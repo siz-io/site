@@ -34,6 +34,12 @@ ins.adsbygoogle {
   margin-bottom: 30px;
 }
 
+ins#bottom.adsbygoogle {
+  display: block;
+  width: 65%;
+  height: 90px;
+}
+
 .thumb {
   display: block;
   height: auto;
