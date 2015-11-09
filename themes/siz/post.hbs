@@ -4,6 +4,7 @@
     the {body} of the default.hbs template, which contains our header/footer. }}
 
 {{! Everything inside the #post tags pulls data from the post }}
+
 {{#post}}
 <link rel="stylesheet" type="text/css" href="{{asset "css/prism.css"}}" />
 <script type="text/javascript" src="{{asset "js/prism.js"}}"></script>
@@ -21,6 +22,16 @@
                 <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time>
             </section>
         </header>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- Fourth Ad -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-5599035100266415"
+             data-ad-slot="2754264084"
+             data-ad-format="auto"></ins>
+        <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
 
         <section class="post-content">
             {{content}}
@@ -59,5 +70,4 @@
 <div id="sidebar">{{> "sidebar"}}</div>
 
 </main>
-
 {{/post}}

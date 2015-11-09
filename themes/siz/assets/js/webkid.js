@@ -11,12 +11,14 @@ $(function() {
     var $parent = $('.sidebox.latest-articles .sidebox-content');
     if(!$parent) {return};
 
-    for(var i = 0; i < Math.min(posts.length, 5); i++) {
-      var p = posts[i];
-      var date = new Date(p.pubDate);
-      var dateStr = date.getDate() + ' ' + months[date.getMonth()] + ' ' + date.getFullYear();
-      var imgThumbnail = p.content ? '<div id="thumb-container"><img src="' + p.content.url + '" class="thumb" /></div>' : '';
-      var $a = $('<a href="' + p.link + '"><div class="date">' + dateStr + '</div><div>' + imgThumbnail + '<span class="thumb-span">' + p.title + '</span> ' + '</div></a>');
+    var min = Math.min(posts.length, 5);
+
+    for(var i = 0; i < min; i++) {
+      var p = posts[i],
+      date = new Date(p.pubDate),
+      dateStr = date.getDate() + ' ' + months[date.getMonth()] + ' ' + date.getFullYear(),
+      imgThumbnail = p.content ? '<div id="thumb-container"><img src="' + p.content.url + '" class="thumb" /></div>' : '',
+      $a = $('<a class="latest-articles-link" href="' + p.link + '"><div class="date">' + dateStr + '</div><div>' + imgThumbnail + '<span class="thumb-span">' + p.title + '</span> ' + '</div></a>');
       
       if(i == 4) {
         $a.addClass('last');

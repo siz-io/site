@@ -886,6 +886,14 @@ body:not(.post-template) .post-title {
     padding: 0.6em 0;
 }
 
+img.post-img {
+    display: inline-block;
+    width: 500px;
+    height: auto;
+    margin: 0 auto;
+    padding: 0.6em 0;
+}
+
 /* Break out larger images to be wider than the main text column
    the class is applied with jQuery */
 .post-content .img-inline {

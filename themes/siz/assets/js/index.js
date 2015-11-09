@@ -83,6 +83,11 @@
                         default:
                             break;
                     }
+                } else {
+                     $postImg.css({
+                        "width": "500px",
+                        "display": "inline-block"
+                    });
                 }
             }
         }

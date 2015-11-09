@@ -30,6 +30,10 @@ strong {
   line-height: 35px;
 }
 
+ins.adsbygoogle {
+  margin-bottom: 30px;
+}
+
 .thumb {
   display: block;
   height: auto;
@@ -375,6 +379,7 @@ ul.taglist li a {
 
 .sidebox .sidebox-content {
   padding: 1em;
+  overflow: hidden;
 }
 
 .sidebox.social {
