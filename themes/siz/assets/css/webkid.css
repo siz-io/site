@@ -30,11 +30,12 @@ strong {
   line-height: 35px;
 }
 
-ins.adsbygoogle {
+.ad {
   margin-bottom: 30px;
+  display: none;
 }
 
-ins#bottom.adsbygoogle {
+.ad #bottom {
   display: block;
   width: 65%;
   height: 90px;
