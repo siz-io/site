@@ -7,6 +7,11 @@ var path = require('path');
 var env = process.env;
 var isDev = ((env.NODE_ENV || 'development') === 'development');
 var conf = {};
+var hbs = require(path.join(env.GHOST_SOURCE, 'node_modules', 'express-hbs'));
+
+hbs.registerHelper('env', function (param) {
+  return env[param];
+});
 
 conf.server = {
   host: '0.0.0.0',
