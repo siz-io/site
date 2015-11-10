@@ -35,7 +35,7 @@ strong {
   display: none;
 }
 
-.ad #bottom {
+.ad.bottom {
   display: block;
   width: 65%;
   height: 90px;
