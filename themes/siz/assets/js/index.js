@@ -52,27 +52,42 @@
             
             if ($postImg.length != 0) {
                 if ($postImg[0].clientWidth < $postImg[0].clientHeight) {
-                    if ($postImg.length == 1) {
-                        $postImg.css({
-                            "width": "327px",
-                            "display": "inline-block"
-                        });
-                    } else if ($postImg.length == 2) {
-                        $postImg.css({
-                            "width": "327px",
-                            "display": "inline-block"
-                        });
-                    } else if ($postImg.length == 3) {
-                        $postImg.css({
-                            "width": "214px",
-                            "display": "inline-block"
-                        });
-                    } else if ($postImg.length == 4 || $postImg.length == 6 || $postImg.length == 8) {
-                        $postImg.css({
-                            "width": "327px",
-                            "display": "inline-block"
-                        });
+                    switch ($postImg.length) {
+                        case 1:
+                            break;
+                        case 2:
+                            $postImg.css({
+                                "width": "327px",
+                                "display": "inline-block"
+                            });
+                            break;
+                        case 3:
+                            $postImg.css({
+                                "width": "214px",
+                                "display": "inline-block"
+                            });
+                            break;
+                        case 4:
+                            $postImg.css({
+                                "width": "327px",
+                                "display": "inline-block"
+                            });
+                            break;
+                        case 6:
+                            $postImg.css({
+                                "width": "327px",
+                                "display": "inline-block"
+                            });
+                            break;
+                        case 8:
+                            $postImg.css({
+                                "width": "327px",
+                                "display": "inline-block"
+                            });
+                        default:
+                            break;
                     }
+
                 } else {
                      $postImg.css({
                         "width": "660px",
@@ -83,12 +98,12 @@
         }
 
         var $img = $("img").on('load', updateImageWidth);
-        // function casperFullImg() {
-        //     $img.each(updateImageWidth);
-        // }
+        function casperFullImg() {
+            $img.each(updateImageWidth);
+        }
 
-        // casperFullImg();
-        // $(window).smartresize(casperFullImg);
+        casperFullImg();
+        $(window).smartresize(casperFullImg);
 
         $(".scroll-down").arctic_scroll();
 
