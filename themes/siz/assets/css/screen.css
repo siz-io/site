@@ -683,7 +683,7 @@ div.fluid-width-video-wrapper iframe {
 /* Every post, on every page, gets this style on its <article> tag */
 .post {
     position: relative;
-    width: 80%;
+    width: 87%;
     max-width: 710px;
     margin: 4rem auto;
     padding-bottom: 4rem;
