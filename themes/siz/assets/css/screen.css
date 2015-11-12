@@ -361,7 +361,7 @@ table.plain tbody > tr:nth-child(odd) > th {
 }
 
 div.fluid-width-video-wrapper {
-    width: 500px;
+    width: 660px;
     margin: auto;
     position: relative;
     padding: 0;
@@ -371,7 +371,7 @@ div.fluid-width-video-wrapper {
 div.fluid-width-video-wrapper iframe {
     top: 0;
     left: 0;
-    width: 500px;
+    width: 660px;
     margin: auto;
     height: 100%;
 }
@@ -843,9 +843,10 @@ body:not(.post-template) .post-title {
 
 .post-template .post-title {
     margin-bottom: 0;
-    font-size: 2.3em;
+    font-size: 2em;
     padding-bottom: 20px;
     border-bottom: 3px solid #000;
+    padding-top: 15px;
 }
 
 .post-template .post-meta {
@@ -857,6 +858,7 @@ body:not(.post-template) .post-title {
     margin: 0;
     border: none;
     padding-top: 20px;
+    padding-bottom: 35px;
 }
 
 /* Stop .full-img from creating horizontal scroll - slight hack due to
@@ -910,6 +912,7 @@ img.post-img {
     margin: 6rem 0 0 0;
     padding: 6rem 0 0 0;
     border-top: #EBF2F6 1px solid;
+    margin-top: 0;
 }
 
 .post-footer h4 {
@@ -963,7 +966,7 @@ img.post-img {
    links remain at a fixed width the whole time */
 .post-footer .share {
     position: absolute;
-    top: 6rem;
+    top: 5rem;
     width: 150px;
 }
 
@@ -1342,9 +1345,10 @@ img.post-img {
     }
 
     .post-template .post-title {
-        font-size: 1.3em;
+        font-size: 1.6em;
         text-align: center;
         margin-bottom: 10px;
+        padding-top: 5px;
     }
 
     section.post-meta {

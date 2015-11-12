@@ -28,6 +28,7 @@ strong {
   padding-top: 25px;
   padding-bottom: 25px;
   line-height: 35px;
+  font-family: "Open Sans";
 }
 
 .ad {
@@ -162,6 +163,7 @@ ul.taglist li a {
   width: 100%;
   max-width: 1250px;
   margin: 0 auto;
+  margin-top: 25px;
   padding: 1em;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -462,12 +464,13 @@ section.post-content img {
 
 section.post-content p {
   display: block;
-  width: 500px;
+  width: 660px;
   margin: auto;
   font-size: 21px;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  line-height: 35px;
+  padding-top: 35px;
+  line-height: 10px;
+  font-family: "Open Sans";
+  text-align: justify;
 }
 
 #article {
