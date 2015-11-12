@@ -471,6 +471,7 @@ section.post-content p {
   padding-top: 35px;
   font-family: "Open Sans";
   text-align: justify;
+  line-height: 30px;
 }
 
 #article {
