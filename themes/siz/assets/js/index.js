@@ -36,6 +36,7 @@
 
         var $postContent = $(".post-content");
         $(".post-content img").addClass('post-img');
+        $(".post-content a").addClass('post-link');
         var $postImg = $(".post-img");
         $postContent.fitVids();
 

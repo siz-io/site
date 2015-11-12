@@ -896,6 +896,15 @@ img.post-img {
     padding: 0.6em 0;
 }
 
+a.post-link {
+    font-weight: 400;
+    color: #ff0002;
+}
+
+a.post-link:hover {
+    text-decoration: underline;
+}
+
 /* Break out larger images to be wider than the main text column
    the class is applied with jQuery */
 .post-content .img-inline {
