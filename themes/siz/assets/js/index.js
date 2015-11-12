@@ -51,47 +51,54 @@
             }
             
             if ($postImg.length != 0) {
-                if ($postImg[0].clientWidth < $postImg[0].clientHeight) {
-                    switch ($postImg.length) {
-                        case 1:
-                            break;
-                        case 2:
-                            $postImg.css({
-                                "width": "327px",
-                                "display": "inline-block"
-                            });
-                            break;
-                        case 3:
-                            $postImg.css({
-                                "width": "214px",
-                                "display": "inline-block"
-                            });
-                            break;
-                        case 4:
-                            $postImg.css({
-                                "width": "327px",
-                                "display": "inline-block"
-                            });
-                            break;
-                        case 6:
-                            $postImg.css({
-                                "width": "327px",
-                                "display": "inline-block"
-                            });
-                            break;
-                        case 8:
-                            $postImg.css({
-                                "width": "327px",
-                                "display": "inline-block"
-                            });
-                        default:
-                            break;
-                    }
+                if ($postContent.outerWidth() > 570) {
+                    if ($postImg[0].clientWidth < $postImg[0].clientHeight) {
+                        switch ($postImg.length) {
+                            case 1:
+                                break;
+                            case 2:
+                                $postImg.css({
+                                    "width": "327px",
+                                    "display": "inline-block"
+                                });
+                                break;
+                            case 3:
+                                $postImg.css({
+                                    "width": "214px",
+                                    "display": "inline-block"
+                                });
+                                break;
+                            case 4:
+                                $postImg.css({
+                                    "width": "327px",
+                                    "display": "inline-block"
+                                });
+                                break;
+                            case 6:
+                                $postImg.css({
+                                    "width": "327px",
+                                    "display": "inline-block"
+                                });
+                                break;
+                            case 8:
+                                $postImg.css({
+                                    "width": "327px",
+                                    "display": "inline-block"
+                                });
+                            default:
+                                break;
+                        }
 
+                    } else {
+                         $postImg.css({
+                            "width": "660px",
+                            "display": "inline-block"
+                        });
+                    }
                 } else {
-                     $postImg.css({
+                    $postImg.css({
                         "width": "660px",
-                        "display": "inline-block"
+                        "display": "block"
                     });
                 }
             }
