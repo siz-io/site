@@ -64,19 +64,11 @@
             }
 
             if ($postContent.length != 0) {
-                $("#sidebar").css('margin-top', '-120px');
+                $("#sidebar").css('margin-top', '-122px');
                 $("iframe.adsterra-banner-300").css({
                     'width': '310px',
                     'height': '260px',
                 });
-            }
-
-            if( /Android|iPad/i.test(navigator.userAgent) ) {
-                $("#sidebar").css('margin-top', '0');
-            }
-
-            if( /Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent) ) {
-                $("#sidebar").css('margin-top', '0');
             }
 
             if ($postImg.length != 0) {
