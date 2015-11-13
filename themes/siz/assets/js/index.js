@@ -40,10 +40,10 @@
         var $postImg = $(".post-img");
         $postContent.fitVids();
 
-        $(".post-content .fluid-width-video-wrapper").after("<div class='ad'></div>");
+        $(".post-content .fluid-width-video-wrapper").after("<div class='ad ad-below-video'></div>");
 
         if( /Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent) ) {
-            $('.ad').html('<iframe class="chitika-mobile-small" src="/assets/html/ad-chitika-mobile-small.html"></iframe>')
+            $('.ad.ad-below-video').html('<iframe class="chitika-mobile-small" src="/assets/html/ad-chitika-mobile-small.html"></iframe>')
         }
 
         function updateImageWidth() {
