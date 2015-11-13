@@ -11,8 +11,10 @@
 
 {{> "header"}}
 
-
 <main id="content" class="content" role="main">
+<div class="ad ad-banner-728 post">
+  <iframe class="adsterra-banner-728" src="{{asset "html/ad-adsterra-banner-728.html"}}"></iframe>
+</div>
     <div id="article" class="box {{#if image}}has-image{{/if}}">
     <article class="{{post_class}}">
 
@@ -61,4 +63,9 @@
 <div id="sidebar">{{> "sidebar"}}</div>
 
 </main>
+
+<div class="ad ad-banner-728">
+  <iframe class="adsterra-banner-728" src="{{asset "html/ad-adsterra-banner-728.html"}}"></iframe>
+</div>
+
 {{/post}}

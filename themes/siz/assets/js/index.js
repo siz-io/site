@@ -40,10 +40,16 @@
         var $postImg = $(".post-img");
         $postContent.fitVids();
 
-        $(".post-content .fluid-width-video-wrapper").after("<div class='ad ad-below-video'></div>");
 
         if( /Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent) ) {
-            $('.ad.ad-below-video').html('<iframe class="chitika-mobile-small" src="/assets/html/ad-chitika-mobile-small.html"></iframe>')
+            $(".post-content .fluid-width-video-wrapper").after("<div class='ad ad-below-video'></div>");
+            $('.ad.ad-below-video').html('<iframe class="adsterra-banner-300" src="/assets/html/ad-adsterra-banner-300.html"></iframe>');
+        } else {
+            $(".content.clearfix").before("<div class='ad ad-banner-728'></div>");
+            $(".content.clearfix").after("<div class='ad ad-banner-728 bottom'></div>");
+
+            $('.ad.ad-banner-728').html('<iframe class="adsterra-banner-728" src="/assets/html/ad-adsterra-banner-728.html"></iframe>');
+            $('.ad.ad-banner-728 bottom').html('<iframe class="adsterra-banner-728" src="/assets/html/ad-adsterra-banner-728.html"></iframe>');
         }
 
         function updateImageWidth() {
@@ -56,7 +62,23 @@
             } else {
                 $this.removeClass('full-img');
             }
-            
+
+            if ($postContent.length != 0) {
+                $("#sidebar").css('margin-top', '-120px');
+                $("iframe.adsterra-banner-300").css({
+                    'width': '310px',
+                    'height': '260px',
+                });
+            }
+
+            if( /Android|iPad/i.test(navigator.userAgent) ) {
+                $("#sidebar").css('margin-top', '0');
+            }
+
+            if( /Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+                $("#sidebar").css('margin-top', '0');
+            }
+
             if ($postImg.length != 0) {
                 if ($postContent.outerWidth() > 570) {
                     if ($postImg[0].clientWidth < $postImg[0].clientHeight) {
