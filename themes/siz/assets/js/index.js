@@ -40,6 +40,12 @@
         var $postImg = $(".post-img");
         $postContent.fitVids();
 
+        $(".post-content .fluid-width-video-wrapper").after("<div class='ad'></div>");
+
+        if( /Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+            $('.ad').html('<iframe class="chitika-mobile-small" src="/assets/html/ad-chitika-mobile-small.html"></iframe>')
+        }
+
         function updateImageWidth() {
             var $this = $(this);
             var contentWidth = $postContent.outerWidth(); // Width of the content

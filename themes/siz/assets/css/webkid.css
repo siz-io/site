@@ -35,6 +35,16 @@ strong {
   margin-bottom: 30px;
 }
 
+iframe.chitika-mobile-small {
+  display: block;
+  width: 300px;
+  height: 250px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-left: -10px;
+  border: none;
+}
+
 .ad.bottom {
   display: block;
   width: 65%;
