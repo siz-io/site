@@ -31,9 +31,9 @@ strong {
   font-family: "Open Sans";
 }
 
-.ad {
+/*.ad {
   margin-bottom: 30px;
-}
+}*/
 
 iframe.chitika-mobile-small {
   display: block;
@@ -298,7 +298,6 @@ ul.taglist li a {
 #sidebar {
   width: 30%;
   float: left;
-  margin-top: 30px;
 }
 
 #sidebar button {
@@ -495,7 +494,6 @@ section.post-content p {
 
 #article.has-image {
   padding-top: 0;
-  margin-top: 30px;
 }
 
 #article .image-wrapper {
