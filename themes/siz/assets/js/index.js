@@ -43,13 +43,17 @@
 
         if( /Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent) ) {
             $(".post-content .fluid-width-video-wrapper").after("<div class='ad ad-below-video'></div>");
-            $('.ad.ad-below-video').html('<iframe class="adsterra-banner-300" src="/assets/html/ad-adsterra-banner-300.html"></iframe>');
+            $('.ad.ad-below-video').html('<iframe class="adsterra-banner-sidebar" src="/assets/html/ad-adsterra-banner-300.html"></iframe>');
         } else {
-            $(".content.clearfix").before("<div class='ad ad-banner-728'></div>");
-            $(".content.clearfix").after("<div class='ad ad-banner-728 bottom'></div>");
+            $(".content.clearfix").before("<div class='ad ad-banner-top'></div>");
+            $(".content.clearfix").after("<div class='ad ad-banner-bottom'></div>");
 
-            $('.ad.ad-banner-728').html('<iframe class="adsterra-banner-728" src="/assets/html/ad-adsterra-banner-728.html"></iframe>');
-            $('.ad.ad-banner-728 bottom').html('<iframe class="adsterra-banner-728" src="/assets/html/ad-adsterra-banner-728.html"></iframe>');
+            $('.ad.ad-banner-top').html('<iframe class="adsterra-banner-top" src="/assets/html/ad-adsterra-banner-728.html"></iframe>');
+            $('.ad.ad-banner-bottom').html('<iframe class="adsterra-banner-bottom" src="/assets/html/ad-adsterra-banner-728.html"></iframe>');
+            
+            if ($postContent.length != 0) {
+                $("#sidebar").css('margin-top', '-172px');
+            }
         }
 
         function updateImageWidth() {
@@ -64,8 +68,7 @@
             }
 
             if ($postContent.length != 0) {
-                $("#sidebar").css('margin-top', '-122px');
-                $("iframe.adsterra-banner-300").css({
+                $("iframe.adsterra-banner-sidebar").css({
                     'width': '310px',
                     'height': '260px',
                 });

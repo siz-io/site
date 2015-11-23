@@ -34,57 +34,38 @@ strong {
 iframe {
   border: none;
   display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
 }
 
-div.ad.ad-banner-728 {
+div.ad.ad-banner-top {
   height: 100px;
-  margin-left: 145px;
+  margin-left: 115px;
   margin-top: 20px;
   margin-bottom: 0;
 }
 
-iframe.adsterra-banner-728 {
-  width: 100%;
-  height: 100%;
-}
-
-div.ad.ad-banner-728.post {
-  margin-left: 40px;
+div.ad.ad-banner-post {
+  margin-left: 20px;
   margin-top: -15px;
   margin-bottom: 30px;
 }
 
-div.ad.ad-banner-728.bottom {
-  margin-left: 145px;
+div.ad.ad-banner-bottom {
+  width: 100%;
+  margin-left: 115px;
   margin-top: -15px;
   margin-bottom: 0;
 }
 
-iframe.adsterra-banner-728.botom {
-  width: 100%;
-  height: 100%;
-}
-
-iframe.adsterra-banner-300 {
+div.ad.ad-banner-sidebar {
   width: 310px;
   height: 260px;
-  margin: 0 auto;
-  margin-top: 20px;
-  margin-left: -10px;
-}
-
-div.ad.ad-banner-300 {
-  width: 310px;
   margin: auto;
   margin-bottom: 30px;
 }
 
-
-.ad.bottom {
-  display: block;
-  width: 65%;
-  height: 90px;
-}
 
 .thumb {
   display: block;
@@ -584,25 +565,25 @@ a.article-link:visited {
     width: 100%;
   }
 
-  #sidebar {
-    margin-top: 0;
+  div#sidebar {
+    margin-top: 0px;
   }
 
-  div.ad.ad-banner-728 {
+  div.ad.ad-banner-top {
     margin-left: 0;
     margin: 0 auto;
     margin-top: 20px;
     width: 740px;
   }
 
-  div.ad.ad-banner-728.bottom {
+  div.ad.ad-banner-bottom {
     margin-left: 0;
     margin: 0 auto;
     margin-top: 20px;
     width: 740px;
   }
 
-  div.ad.ad-banner-728.post {
+  div.ad.ad-banner-top-post {
     margin-left: -5px;
     margin-bottom: 30px;
     width: 740px;
@@ -615,8 +596,8 @@ a.article-link:visited {
     display: none;
   }
 
-  #sidebar {
-    margin-top: 0;
+  div#sidebar {
+    margin-top: 0px;
   }
 
   section.post-content p {
@@ -628,15 +609,23 @@ a.article-link:visited {
     display: block;
   }
 
-  div.ad.ad-banner-728 {
+  div.ad.ad-banner-top {
    display: none;
   }
 
-  div.ad.ad-banner-728.bottom {
+  div.ad.ad-banner-post {
+   display: none;
+  }
+
+  div.ad.ad-banner-bottom {
     display: none;
   }
 
-  div.ad.ad-banner-300 {
+  div.ad.ad-banner-sidebar {
     display: none;
+  }
+
+  div.ad.ad-below-video {
+    margin-left: -10px;
   }
 }
