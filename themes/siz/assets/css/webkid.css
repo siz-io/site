@@ -57,7 +57,6 @@ div.ad.ad-banner-post {
 }
 
 div.ad.ad-banner-bottom {
-  width: 100%;
   margin-left: 115px;
   margin-top: -15px;
   margin-bottom: 0;
@@ -587,12 +586,11 @@ a.article-link:visited {
     width: 740px;
   }
 
-  div.ad.ad-banner-top-post {
+  div.ad.ad-banner-post {
     margin-left: -5px;
     margin-bottom: 30px;
     width: 740px;
   }
-
 }
 
 @media (max-width: 750px) {

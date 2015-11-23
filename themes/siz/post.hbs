@@ -12,9 +12,11 @@
 {{> "header"}}
 
 <main id="content" class="content" role="main">
+
 <div class="ad ad-banner-post">
-  <iframe src="{{asset "html/ad-adsterra-banner-728.html"}}"></iframe>
+  <iframe class="adsterra-banner-728" src="{{asset "html/ad-criteo-728-90.html"}}"></iframe>
 </div>
+
     <div id="article" class="box {{#if image}}has-image{{/if}}">
     <article class="{{post_class}}">
 
@@ -65,7 +67,7 @@
 </main>
 
 <div class="ad ad-banner-bottom">
-  <iframe src="{{asset "html/ad-adsterra-banner-728.html"}}"></iframe>
+  <iframe class="criteo-banner-728" src="{{asset "html/ad-criteo-728-90.html"}}"></iframe>
 </div>
 
 {{/post}}

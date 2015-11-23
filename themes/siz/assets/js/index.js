@@ -43,19 +43,18 @@
 
         if( /Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent) ) {
             $(".post-content .fluid-width-video-wrapper").after("<div class='ad ad-below-video'></div>");
-            $('.ad.ad-below-video').html('<iframe src="/assets/html/ad-adsterra-banner-300.html"></iframe>');
+            $('.ad.ad-below-video').html('<iframe src="/assets/html/ad-criteo-mobile-300-250.html"></iframe>');
         } else {
             $(".content.clearfix").before("<div class='ad ad-banner-top'></div>");
             $(".content.clearfix").after("<div class='ad ad-banner-bottom'></div>");
 
-            $('.ad.ad-banner-top').html('<iframe src="/assets/html/ad-adsterra-banner-728.html"></iframe>');
-            $('.ad.ad-banner-bottom').html('<iframe src="/assets/html/ad-adsterra-banner-728.html"></iframe>');
-            
             if ($postContent.length != 0) {
                 $("#sidebar").css('margin-top', '-172px');
             }
-        }
 
+            $('.ad.ad-banner-top').html('<iframe src="/assets/html/ad-criteo-728-90.html"></iframe>');
+            $('.ad.ad-banner-bottom').html('<iframe src="/assets/html/ad-criteo-728-90.html"></iframe>');
+        }
         function updateImageWidth() {
             var $this = $(this);
             var contentWidth = $postContent.outerWidth(); // Width of the content
@@ -65,13 +64,6 @@
                 $this.addClass('full-img');
             } else {
                 $this.removeClass('full-img');
-            }
-
-            if ($postContent.length != 0) {
-                $("iframe.adsterra-banner-sidebar").css({
-                    'width': '310px',
-                    'height': '260px',
-                });
             }
 
             if ($postImg.length != 0) {
