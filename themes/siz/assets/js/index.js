@@ -49,7 +49,7 @@
             $(".content.clearfix").after("<div class='ad ad-banner-bottom'></div>");
 
             if ($postContent.length != 0) {
-                $("#sidebar").css('margin-top', '-172px');
+                $("#sidebar").css('margin-top', '-132px');
             }
 
             $('.ad.ad-banner-top').html('<iframe src="/assets/html/ad-criteo-728-90.html"></iframe>');
