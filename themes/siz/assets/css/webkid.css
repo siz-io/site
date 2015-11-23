@@ -39,6 +39,14 @@ iframe {
   margin: 0 auto;
 }
 
+div#MarketGidScriptRootC32243 {
+  display: block;
+}
+
+div#MarketGidScriptRootC32245 {
+  display: none;
+}
+
 .ad {
   overflow: hidden;
 }
@@ -591,6 +599,14 @@ a.article-link:visited {
     margin-bottom: 30px;
     width: 740px;
   }
+
+  div#MarketGidScriptRootC32245 {
+    display: block;
+  }
+
+  div#MarketGidScriptRootC32243 {
+    display: none;
+  }
 }
 
 @media (max-width: 750px) {
@@ -629,5 +645,13 @@ a.article-link:visited {
 
   div.ad.ad-below-video {
     margin-left: -10px;
+  }
+
+  div#MarketGidScriptRootC32245 {
+    display: block;
+  }
+
+  div#MarketGidScriptRootC32243 {
+    display: none;
   }
 }
