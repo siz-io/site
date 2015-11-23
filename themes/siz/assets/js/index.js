@@ -43,13 +43,13 @@
 
         if( /Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent) ) {
             $(".post-content .fluid-width-video-wrapper").after("<div class='ad ad-below-video'></div>");
-            $('.ad.ad-below-video').html('<iframe class="adsterra-banner-sidebar" src="/assets/html/ad-adsterra-banner-300.html"></iframe>');
+            $('.ad.ad-below-video').html('<iframe src="/assets/html/ad-adsterra-banner-300.html"></iframe>');
         } else {
             $(".content.clearfix").before("<div class='ad ad-banner-top'></div>");
             $(".content.clearfix").after("<div class='ad ad-banner-bottom'></div>");
 
-            $('.ad.ad-banner-top').html('<iframe class="adsterra-banner-top" src="/assets/html/ad-adsterra-banner-728.html"></iframe>');
-            $('.ad.ad-banner-bottom').html('<iframe class="adsterra-banner-bottom" src="/assets/html/ad-adsterra-banner-728.html"></iframe>');
+            $('.ad.ad-banner-top').html('<iframe src="/assets/html/ad-adsterra-banner-728.html"></iframe>');
+            $('.ad.ad-banner-bottom').html('<iframe src="/assets/html/ad-adsterra-banner-728.html"></iframe>');
             
             if ($postContent.length != 0) {
                 $("#sidebar").css('margin-top', '-172px');
