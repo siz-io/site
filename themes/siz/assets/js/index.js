@@ -43,10 +43,10 @@
 
         if( /Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent) ) {
             $(".post-content .fluid-width-video-wrapper").after("<div id='MarketGidScriptRootC32245'></div>");
-            $('#MarketGidPreloadC32245').html('<div id="MarketGidPreloadC32245"><a id="mg_add32245" href="http://mgid.com/advertisers/?utm_source=widget&utm_medium=text&utm_campaign=add" target="_blank"></a><br><a href="http://mgid.com/" target="_blank"></a></div><script src="/assets/js/ad-mgid-1-3.js"></script>');
+            $('#MarketGidScriptRootC32245').html('<iframe src="/assets/html/ad-mgid-1-3.html"></iframe>');
         } else {
             $(".post-content .fluid-width-video-wrapper").after("<div id='MarketGidScriptRootC32243'></div>");
-            $('#MarketGidScriptRootC32243').html('<div id="MarketGidPreloadC32243"><a id="mg_add32243" href="http://mgid.com/advertisers/?utm_source=widget&utm_medium=text&utm_campaign=add" target="_blank"></a><br><a href="http://mgid.com/" target="_blank"></a></div><script src="/assets/js/ad-mgid-4-2.js"></script>');
+            $('#MarketGidScriptRootC32243').html('<iframe src="/assets/html/ad-mgid-4-2.html"></iframe>');
 
             $(".content.clearfix").before("<div class='ad ad-banner-top'></div>");
             $(".content.clearfix").after("<div class='ad ad-banner-bottom'></div>");
