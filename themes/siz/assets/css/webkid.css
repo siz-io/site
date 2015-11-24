@@ -78,14 +78,20 @@ div.ad.ad-banner-sidebar {
   margin-bottom: 30px;
 }
 
+.thumb-container {
+  position: relative;
+  overflow: hidden;
+  height: 205px;
+  width: 320px;
+  margin-bottom: 10px;
+}
 
 .thumb {
-  display: block;
-  height: auto;
-  width: 100%;
-  margin: auto;
-  border-radius: 2px;
-  margin-bottom: 10px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 200px;
+  width: 340px;
 }
 
 .thumb-span {
