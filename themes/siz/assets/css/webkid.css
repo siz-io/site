@@ -38,11 +38,7 @@ iframe {
   margin: 0 auto;
 }
 
-iframe.mgid-iframe-mobile {
-  height: 100%;
-}
-
-iframe.mgid-iframe-desktop {
+.mgid {
   height: 100%;
 }
 

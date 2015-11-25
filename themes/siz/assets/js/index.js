@@ -40,15 +40,20 @@
         var $postImg = $(".post-img");
         $postContent.fitVids();
 
+        if (window.location.search == "?src=tum") {
+            window.scrollTo(0, 480);
+        } else {
+            window.scrollTo(0, 0);
+        }
 
-        if( /Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+        if( /Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
             $(".post-content .fluid-width-video-wrapper").after("<div id='MarketGidScriptRootC32245'></div>");
             $(".post-content .fb-video").after("<div id='MarketGidScriptRootC32245'></div>");
-            $('#MarketGidScriptRootC32245').html('<iframe class="mgid-iframe-mobile" src="/assets/html/ad-mgid-1-3.html"></iframe>');
+            $('#MarketGidScriptRootC32245').html('<iframe class="mgid" src="/assets/html/ad-mgid-1-3.html"></iframe>');
         } else {
             $(".post-content .fluid-width-video-wrapper").after("<div id='MarketGidScriptRootC32243'></div>");
             $(".post-content .fb-video").after("<div id='MarketGidScriptRootC32243'></div>");
-            $('#MarketGidScriptRootC32243').html('<iframe class="mgid-iframe-desktop" src="/assets/html/ad-mgid-4-2.html"></iframe>');
+            $('#MarketGidScriptRootC32243').html('<iframe class="mgid" src="/assets/html/ad-mgid-4-2.html"></iframe>');
 
             $(".content.clearfix").before("<div class='ad ad-banner-top'></div>");
             $(".content.clearfix").after("<div class='ad ad-banner-bottom'></div>");
