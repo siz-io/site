@@ -35,8 +35,15 @@ iframe {
   border: none;
   display: block;
   width: 100%;
-  height: 100%;
   margin: 0 auto;
+}
+
+iframe.mgid-iframe-mobile {
+  height: 100%;
+}
+
+iframe.mgid-iframe-desktop {
+  height: 100%;
 }
 
 div#MarketGidScriptRootC32243 {
@@ -44,7 +51,6 @@ div#MarketGidScriptRootC32243 {
   width: 680px;
   height: 600px;
   margin: auto;
-  margin-top: 30px;
 }
 
 div#MarketGidScriptRootC32245 {
@@ -53,6 +59,25 @@ div#MarketGidScriptRootC32245 {
 
 .ad {
   overflow: hidden;
+}
+
+iframe.instagram-media.instagram-media-rendered {
+  border: none;
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#instagram-embed-0.instagram-media.instagram-media-rendered {
+  border: 0px;
+  margin: auto;
+  max-width: 658px;
+  width: calc(100% - 2px);
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.498039) 0px 0px 1px 0px, rgba(0, 0, 0, 0.14902) 0px 1px 10px 0px;
+  display: block;
+  padding: 0px;
+  background: rgb(255, 255, 255);
 }
 
 div.ad.ad-banner-top {
@@ -140,6 +165,14 @@ div.ad.ad-banner-sidebar {
 
 .fb_iframe_widget span {
   margin-top: 40px;  
+}
+
+.fb-video {
+  margin-bottom: 0;
+}
+
+div.fluid-width-video-wrapper {
+  margin-bottom: 35px;
 }
 
 
@@ -651,7 +684,6 @@ a.article-link:visited {
 
   div#MarketGidScriptRootC32245 {
     display: block;
-    margin-top: 40px;
     height: 750px;
   }
 
