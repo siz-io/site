@@ -39,18 +39,7 @@ iframe {
 }
 
 .mgid {
-  height: 600px;
-}
-
-div#MarketGidScriptRootC32243 {
-  display: block;
-  width: 680px;
-  height: 600px;
-  margin: auto;
-}
-
-div#MarketGidScriptRootC32245 {
-  display: none;
+  height: 620px;
 }
 
 .ad {
@@ -676,14 +665,5 @@ a.article-link:visited {
 
   div.ad.ad-below-video {
     margin-left: -10px;
-  }
-
-  div#MarketGidScriptRootC32245 {
-    display: block;
-    height: 750px;
-  }
-
-  div#MarketGidScriptRootC32243 {
-    display: none;
   }
 }
