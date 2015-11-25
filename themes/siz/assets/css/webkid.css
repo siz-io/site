@@ -38,7 +38,7 @@ iframe {
   margin: 0 auto;
 }
 
-.mgid {
+.mgid-ad {
   height: 620px;
 }
 
@@ -89,6 +89,10 @@ div.ad.ad-banner-sidebar {
   height: 260px;
   margin: auto;
   margin-bottom: 30px;
+}
+
+div.ad.ad-banner-sidebar iframe {
+  height: 100%;
 }
 
 .thumb-container {
