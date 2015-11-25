@@ -97,6 +97,18 @@ div.ad.ad-banner-sidebar iframe {
   overflow: hidden;
 }
 
+div.ad.ad-banner-bottom-sidebar {
+  width: 310px;
+  height: 260px;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+div.ad.ad-banner-bottom-sidebar iframe {
+  height: 100%;
+  overflow: hidden;
+}
+
 .thumb-container {
   position: relative;
   overflow: hidden;
