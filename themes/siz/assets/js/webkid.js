@@ -12,7 +12,8 @@ $(function() {
     if(!$parent) {return};
 
     var min = Math.min(posts.length, 5); 
-
+    var sidebarAd = '<div class="ad ad-banner-sidebar"><iframe src="/assets/html/ad-criteo-pc-300-250.html"></iframe></div>';
+    
     for(var i = 0; i < min; i++) {
       var p = posts[i];
       var date = new Date(p.pubDate);
@@ -20,6 +21,10 @@ $(function() {
       var imgThumbnail = p.content ? '<div class="thumb-container"><img src="' + p.content.url + '" class="thumb" /></div>' : '';
       var $a = $('<a class="latest-articles-link" href="' + p.link + '"><div class="date">' + dateStr + '</div><div>' + imgThumbnail + '<span class="thumb-span">' + p.title + '</span> ' + '</div></a>');
       
+      if(i == 1) {
+        $parent.append(sidebarAd);
+      }
+
       if(i == 4) {
         $a.addClass('last');
       }

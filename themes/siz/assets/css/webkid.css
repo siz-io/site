@@ -89,10 +89,12 @@ div.ad.ad-banner-sidebar {
   height: 260px;
   margin: auto;
   margin-bottom: 30px;
+  border-bottom: 1px solid #eee; 
 }
 
 div.ad.ad-banner-sidebar iframe {
   height: 100%;
+  overflow: hidden;
 }
 
 .thumb-container {
