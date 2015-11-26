@@ -13,6 +13,7 @@ $(function() {
 
     var min = Math.min(posts.length, 5); 
     var sidebarAd = /Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent) ? '<iframe class="ad ad-banner-sidebar" src="/assets/html/ad-criteo-300-250-mobile.html"></iframe>' : '<iframe class="ad ad-banner-sidebar" src="/assets/html/ad-criteo-300-250-desktop-top.html"></iframe>';
+    var mgidBottom = /Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent) ? '<iframe class="ad ad-banner-sidebar" src="/assets/html/ad-mgid-1-3-bottom.html"></iframe>' : '';
     
     for(var i = 0; i < min; i++) {
       var p = posts[i];
@@ -23,6 +24,10 @@ $(function() {
       
       if(i == 1) {
         $parent.append(sidebarAd);
+      }
+
+      if(i == 3) {
+        $parent.append(mgidBottom);
       }
 
       if(i == 4) {

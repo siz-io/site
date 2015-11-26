@@ -47,8 +47,8 @@
         }
         if( /Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
             if(disableMgid.val() !== "true") {
-                $(".post-content .fluid-width-video-wrapper").after('<iframe scrolling="no" class="ad-mgid-mobile" src="/assets/html/ad-mgid-1-3.html"></iframe>');
-                $(".post-content .fb-video").after('<iframe scrolling="no" class="ad-mgid-mobile" src="/assets/html/ad-mgid-1-3.html"></iframe>');
+                $(".post-content .fluid-width-video-wrapper").after('<iframe scrolling="no" class="ad-mgid-mobile" src="/assets/html/ad-mgid-1-3-post.html"></iframe>');
+                $(".post-content .fb-video").after('<iframe scrolling="no" class="ad-mgid-mobile" src="/assets/html/ad-mgid-1-3-post.html"></iframe>');
             }
         } else {            
             if(disableMgid.val() !== "true") {
