@@ -56,8 +56,8 @@
                 $(".post-content .fb-video").after('<iframe class="ad-mgid" src="/assets/html/ad-mgid-4-2.html"></iframe>');
             }
 
-            $(".article-link").first().before('<iframe class="ad ad-banner-top" src="/assets/html/ad-criteo-728-90.html"></iframe>');
-            $(".content.clearfix").after('<iframe class="ad ad-banner-bottom" src="/assets/html/ad-criteo-728-90.html"></iframe>');
+            $(".article-link").first().before('<iframe class="ad ad-banner-top" src="/assets/html/ad-criteo-top-728-90.html"></iframe>');
+            $(".content.clearfix").after('<iframe class="ad ad-banner-bottom" src="/assets/html/ad-criteo-bottom-728-90.html"></iframe>');
 
         }
         function updateImageWidth() {
