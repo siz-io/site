@@ -33,7 +33,6 @@
         };
 
     $document.ready(function () {
-
         var $postContent = $(".post-content");
         $(".post-content img").addClass('post-img');
         $(".post-content a").addClass('post-link');
@@ -51,21 +50,18 @@
                 $(".post-content .fluid-width-video-wrapper").after('<iframe class="ad-mgid" src="/assets/html/ad-mgid-1-3.html"></iframe>');
                 $(".post-content .fb-video").after('<iframe class="ad-mgid" src="/assets/html/ad-mgid-1-3.html"></iframe>');
             }
-        } else {
+        } else {            
             if(disableMgid.val() !== "true") {
                 $(".post-content .fluid-width-video-wrapper").after('<iframe class="ad-mgid" src="/assets/html/ad-mgid-4-2.html"></iframe>');
                 $(".post-content .fb-video").after('<iframe class="ad-mgid" src="/assets/html/ad-mgid-4-2.html"></iframe>');
             }
 
-            $(".content.clearfix").before("<div class='ad ad-banner-top'></div>");
-            $(".content.clearfix").after("<div class='ad ad-banner-bottom'></div>");
+            $(".article-link").first().before('<iframe class="ad ad-banner-top" src="/assets/html/ad-criteo-728-90.html"></iframe>');
+            $(".content.clearfix").after('<iframe class="ad ad-banner-bottom" src="/assets/html/ad-criteo-728-90.html"></iframe>');
 
             if ($postContent.length != 0) {
                 $("#sidebar").css('margin-top', '-132px');
             }
-
-            $('.ad.ad-banner-top').html('<iframe src="/assets/html/ad-criteo-728-90.html"></iframe>');
-            $('.ad.ad-banner-bottom').html('<iframe src="/assets/html/ad-criteo-728-90.html"></iframe>');
         }
         function updateImageWidth() {
             var $this = $(this);

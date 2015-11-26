@@ -12,7 +12,7 @@ $(function() {
     if(!$parent) {return};
 
     var min = Math.min(posts.length, 5); 
-    var sidebarAd = '<div class="ad ad-banner-sidebar"><iframe src="/assets/html/ad-criteo-pc-300-250.html"></iframe></div>';
+    var sidebarAd = '<iframe class="ad ad-banner-sidebar" src="/assets/html/ad-criteo-pc-300-250.html"></iframe>';
     
     for(var i = 0; i < min; i++) {
       var p = posts[i];
