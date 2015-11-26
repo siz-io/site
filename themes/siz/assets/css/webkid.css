@@ -38,8 +38,14 @@ iframe {
   margin: 0 auto;
 }
 
-.ad-mgid {
+.ad-mgid-desktop {
   height: 620px;
+  overflow: hidden;
+}
+
+.ad-mgid-mobile {
+  height: 780px;
+  overflow: hidden;
 }
 
 .ad {
