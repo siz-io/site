@@ -12,7 +12,7 @@ $(function() {
     if(!$parent) {return};
 
     var min = Math.min(posts.length, 5); 
-    var sidebarAd = /Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent) ? '<iframe class="ad ad-banner-sidebar" src="/assets/html/ad-criteo-mobile-300-250.html"></iframe>' : '<iframe class="ad ad-banner-sidebar" src="/assets/html/ad-criteo-pc-300-250.html"></iframe>';
+    var sidebarAd = /Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent) ? '<iframe class="ad ad-banner-sidebar" src="/assets/html/ad-criteo-sidebar-mobile-300-250-top.html"></iframe>' : '<iframe class="ad ad-banner-sidebar" src="/assets/html/ad-criteo-sidebar-pc-300-250-top.html"></iframe>';
     
     for(var i = 0; i < min; i++) {
       var p = posts[i];
