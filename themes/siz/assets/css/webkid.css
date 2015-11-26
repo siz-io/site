@@ -623,21 +623,21 @@ a.article-link:visited {
     margin-top: 0px;
   }
 
-  div.ad.ad-banner-top {
+  .ad.ad-banner-top {
     margin-left: 0;
     margin: 0 auto;
     margin-top: 20px;
     width: 740px;
   }
 
-  div.ad.ad-banner-bottom {
+  .ad.ad-banner-bottom {
     margin-left: 0;
     margin: 0 auto;
     margin-top: 20px;
     width: 740px;
   }
 
-  div.ad.ad-banner-post {
+  .ad.ad-banner-post {
     margin-left: -5px;
     margin-bottom: 30px;
     width: 740px;
@@ -662,19 +662,19 @@ a.article-link:visited {
     display: block;
   }
 
-  div.ad.ad-banner-top {
+  .ad.ad-banner-top {
    display: none;
   }
 
-  div.ad.ad-banner-post {
+  .ad.ad-banner-post {
    display: none;
   }
 
-  div.ad.ad-banner-bottom {
+  .ad.ad-banner-bottom {
     display: none;
   }
 
-  div.ad.ad-banner-sidebar-bottom {
+  .ad.ad-banner-bottom-sidebar {
     display: none;
   }
 
