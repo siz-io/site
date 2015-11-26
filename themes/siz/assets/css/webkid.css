@@ -72,10 +72,14 @@ iframe.instagram-media.instagram-media-rendered {
   margin-bottom: 30px;
 }
 
-div.ad.ad-banner-post {
-  margin-left: 20px;
-  margin-top: -15px;
-  margin-bottom: -10px;
+.ad.ad-banner-post {
+  height: 130px;
+  position: relative;
+  width: 101%;
+  padding-left: 30px;
+  margin: auto;
+  background-color: #F5F5F5;
+  margin-bottom: 30px;
 }
 
 .ad.ad-banner-bottom {
@@ -670,7 +674,7 @@ a.article-link:visited {
     display: none;
   }
 
-  div.ad.ad-banner-sidebar {
+  div.ad.ad-banner-sidebar-bottom {
     display: none;
   }
 

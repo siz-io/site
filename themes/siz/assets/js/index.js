@@ -59,9 +59,6 @@
             $(".article-link").first().before('<iframe class="ad ad-banner-top" src="/assets/html/ad-criteo-728-90.html"></iframe>');
             $(".content.clearfix").after('<iframe class="ad ad-banner-bottom" src="/assets/html/ad-criteo-728-90.html"></iframe>');
 
-            if ($postContent.length != 0) {
-                $("#sidebar").css('margin-top', '-132px');
-            }
         }
         function updateImageWidth() {
             var $this = $(this);
