@@ -3,20 +3,20 @@
 
 // Ghost runs in `development` mode by default. Full documentation can be found at http://support.ghost.org/config/
 
-var path = require('path');
-var env = process.env;
-var isDev = ((env.NODE_ENV || 'development') === 'development');
-var conf = {};
-var hbs = require(path.join(env.GHOST_SOURCE, 'node_modules', 'express-hbs'));
+var path = require('path')
+var env = process.env
+var isDev = ((env.NODE_ENV || 'development') === 'development')
+var conf = {}
+var hbs = require(path.join(env.GHOST_SOURCE, 'node_modules', 'express-hbs'))
 
 hbs.registerHelper('env', function (param) {
-  return env[param];
-});
+  return env[param]
+})
 
 conf.server = {
   host: '0.0.0.0',
   port: '2368'
-};
+}
 
 conf.paths = {
   contentPath: env.GHOST_CONTENT
@@ -33,11 +33,11 @@ conf.mail = (env.MAIL_SERVICE || env.MAIL_USER || env.MAIL_PASSWORD) ? {
       pass: env.MAIL_PASSWORD
     }
   }
-} : {};
+} : {}
 
-conf.mail.from = env.MAIL_FROM;
+conf.mail.from = env.MAIL_FROM
 
-conf.fileStorage = false;
+conf.fileStorage = false
 
 conf.database = env.DB_HOST ? {
   client: 'mysql',
@@ -52,9 +52,9 @@ conf.database = env.DB_HOST ? {
   connection: {
     filename: path.join(env.GHOST_CONTENT, '/data/ghost.db')
   }
-};
+}
 
 module.exports = {
   production: conf,
   development: conf
-};
+}
