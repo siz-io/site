@@ -85,7 +85,7 @@
     $postContent.fitVids()
 
     var ghostAsset = function (path) {
-      return $('.ghost-asset[data-path="' + path + '"]').val() || 'Asset not exposed'
+      return $('meta[property="ghost-asset:' + path + '"]').attr('content') || 'Asset not exposed'
     }
 
     if (window.location.search === '?src=tum') {
