@@ -88,6 +88,8 @@
       return $('.ghost-asset[data-path="' + path + '"]').val() || 'Asset not exposed'
     }
 
+    console.log(window.location);
+
     if (window.location.search === '?src=tum') {
       window.scrollTo(0, 480)
     } else {
