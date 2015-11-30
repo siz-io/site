@@ -43,11 +43,7 @@
     $postContent.fitVids()
 
     var ghostAsset = function (path) {
-      if ($('.ghost-asset[data-path="' + path + '"]')) {
-        return $('.ghost-asset[data-path="' + path + '"]').val()
-      } else {
-        return 'Asset not exposed'
-      }
+      return $('.ghost-asset[data-path="' + path + '"]').val() || 'Asset not exposed'
     }
 
     if (window.location.search === '?src=tum') {
