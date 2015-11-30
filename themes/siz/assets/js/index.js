@@ -43,10 +43,8 @@
     $postContent.fitVids()
 
     var ghostAsset = function (path) {
-      if (path === $('.ghost-asset[data-path="' + path + '"]').data('path')) {
-        var spiltedHash = $('.ghost-asset[data-path="' + path + '"]').val().split('v=')
-        var hash = spiltedHash[1]
-        return '/assets/' + path + '?v=' + hash
+      if ($('.ghost-asset[data-path="' + path + '"]')) {
+        return '/assets/' + path
       } else {
         return 'Asset not exposed'
       }
