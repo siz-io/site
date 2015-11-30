@@ -44,7 +44,7 @@
 
     var ghostAsset = function (path) {
       if ($('.ghost-asset[data-path="' + path + '"]')) {
-        return '/assets/' + path
+        return $('.ghost-asset[data-path="' + path + '"]').val()
       } else {
         return 'Asset not exposed'
       }
