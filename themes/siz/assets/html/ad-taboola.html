@@ -39,7 +39,7 @@
   var mode = window.location.search.split("&mode=")[1].split("&id=")[0]
   var id = window.location.search.split("&id=")[1].split("&placement=")[0]
   var placement = window.location.search.split("&placement=")[1]
-  if (container === "taboola-below-video-player-thumbnails") {
+  if (id === "taboola-below-video-player-thumbnails") {
     document.getElementById('container-id').id = "taboola-below-video-player-thumbnails"
   } else {
     document.getElementById('container-id').id = "taboola-end-of-article-thumbnails"
