@@ -50,7 +50,7 @@
       }
 
       var min = Math.min(posts.length, 5)
-      var sidebarAd = /Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent) ? '<iframe class="ad ad-banner-sidebar" src="/assets/html/ad-criteo-300-250-mobile.html"></iframe>' : '<iframe class="ad ad-banner-sidebar" src="/assets/html/ad-criteo-300-250-desktop-top.html"></iframe>'
+      var sidebarAd = /Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent) ? '<iframe class="ad ad-banner-sidebar" src="' + ghostAsset('html/ad-criteo.html') + '&id=308303"></iframe>' : '<iframe class="ad ad-banner-sidebar" src="' + ghostAsset('html/ad-criteo.html') + '&id=308302"></iframe>'
       for (var i = 0; i < min; i++) {
         var p = posts[i]
         var date = new Date(p.pubDate)
@@ -100,8 +100,8 @@
       $('.post-content .fluid-width-video-wrapper').after('<iframe scrolling="no" class="ad-taboola-1-3" src="' + ghostAsset('html/ad-taboola.html') + '&mode=thumbnails-a&id=taboola-below-video-player-thumbnails&placement=Below Video Player Thumbnails"></iframe>')
       $('.post-content .fb-video').after('<iframe scrolling="no" class="ad-taboola-1-3" src="' + ghostAsset('html/ad-taboola.html') + '"></iframe>')
 
-      $('.article-link').first().before('<iframe class="ad ad-banner-top" src="' + ghostAsset('html/ad-criteo-728-90-top.html') + '"></iframe>')
-      $('.content.clearfix').after('<iframe class="ad ad-banner-bottom" src="' + ghostAsset('html/ad-criteo-728-90-bottom.html') + '"></iframe>')
+      $('.article-link').first().before('<iframe class="ad ad-banner-top" src="' + ghostAsset('html/ad-criteo.html') + '&id=308277"></iframe>')
+      $('.content.clearfix').after('<iframe class="ad ad-banner-bottom" src="' + ghostAsset('html/ad-criteo.html') + '&id=312767"></iframe>')
     }
 
     var updateImageWidth = function () {
