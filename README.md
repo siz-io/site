@@ -11,6 +11,8 @@
 - `DB_PASSWORD`
 - `DB_NAME`
 - `LOGENTRIES_TOKEN`
+- `FB_APP_ID`
+- `GOOGLE_ANALYTICS`
 
 ## Commands
 ### Run locally
