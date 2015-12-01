@@ -81,7 +81,6 @@
     $('.post-content img').addClass('post-img')
     $('.post-content a').addClass('post-link')
     var $postImg = $('.post-img')
-    var disableMgid = $('#disable-mgid')
     $postContent.fitVids()
 
     var ghostAsset = function (path) {
@@ -89,7 +88,7 @@
     }
 
     if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
-      $("#taglist li:nth-child(4)").nextAll().remove()
+      $('#taglist li:nth-child(4)').nextAll().remove()
       $('.post-content .fluid-width-video-wrapper').after('<iframe scrolling="no" class="ad-taboola-1-3" src="' + ghostAsset('html/ad-taboola.html') + '&mode=thumbnails-a&id=taboola-below-video-player-thumbnails&placement=' + encodeURIComponent('Below Video Player Thumbnails') + '"></iframe>')
       $('.post-content .fb-video').after('<iframe scrolling="no" class="ad-taboola-1-3" src="' + ghostAsset('html/ad-taboola.html') + '"></iframe>')
     } else {
