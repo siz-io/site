@@ -58,9 +58,9 @@
         var imgThumbnail = p.content ? '<div class="thumb-container"><img src="' + p.content.url + '" class="thumb" /></div>' : ''
         var $a = $('<a class="latest-articles-link" href="' + p.link + '"><div class="date">' + dateStr + '</div><div>' + imgThumbnail + '<span class="thumb-span">' + p.title + '</span> ' + '</div></a>')
 
-        // if (i === 1) {
-        //   $parent.append(sidebarAd)
-        // }
+        if (i === 1) {
+          $parent.append(sidebarAd)
+        }
 
         if (i === 4) {
           $a.addClass('last')
@@ -100,8 +100,8 @@
       $('.post-content .fluid-width-video-wrapper').after('<iframe scrolling="no" class="ad-taboola-1-3" src="' + ghostAsset('html/ad-taboola-1-3.html') + '"></iframe>')
       $('.post-content .fb-video').after('<iframe scrolling="no" class="ad-taboola-1-3" src="' + ghostAsset('html/ad-taboola-1-3.html') + '"></iframe>')
 
-      // $('.article-link').first().before('<iframe class="ad ad-banner-top" src="' + ghostAsset('html/ad-criteo-728-90-top.html') + '"></iframe>')
-      // $('.content.clearfix').after('<iframe class="ad ad-banner-bottom" src="' + ghostAsset('html/ad-criteo-728-90-bottom.html') + '"></iframe>')
+      $('.article-link').first().before('<iframe class="ad ad-banner-top" src="' + ghostAsset('html/ad-criteo-728-90-top.html') + '"></iframe>')
+      $('.content.clearfix').after('<iframe class="ad ad-banner-bottom" src="' + ghostAsset('html/ad-criteo-728-90-bottom.html') + '"></iframe>')
     }
 
     var updateImageWidth = function () {
