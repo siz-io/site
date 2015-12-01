@@ -34,13 +34,21 @@
 </script>
 </head>
 <body>
-<div id="taboola-below-video-player-thumbnails"></div>
+<div id="container-id"></div>
 <script type="text/javascript">
+  var mode = window.location.search.split("&mode=")[1].split("&id=")[0]
+  var id = window.location.search.split("&id=")[1].split("&placement=")[0]
+  var placement = window.location.search.split("&placement=")[1]
+  if (mode === "thumbnails-a") {
+    document.getElementById('container-id').id = "taboola-below-video-player-thumbnails"
+  } else {
+    document.getElementById('container-id').id = "taboola-end-of-article-thumbnails"
+  }
   window._taboola = window._taboola || [];
   _taboola.push({
-    mode: 'thumbnails-a',
-    container: 'taboola-below-video-player-thumbnails',
-    placement: 'Below Video Player Thumbnails',
+    mode: mode,
+    container: id,
+    placement: placement,
     target_type: 'mix'
   });
 </script>
