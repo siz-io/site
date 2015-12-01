@@ -118,6 +118,10 @@ iframe.instagram-media.instagram-media-rendered {
   overflow: hidden;
 }
 
+.ad-criteo-top {
+  display: none;
+}
+
 .thumb-container {
   position: relative;
   overflow: hidden;
@@ -688,6 +692,17 @@ a.article-link:visited {
   .ad.ad-banner-bottom-sidebar {
     display: none;
   }
+
+  .ad-criteo-top {
+    display: block;
+    width: 310px;
+    height: 260px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: -20px;
+    overflow: hidden;
+  }
+
 
   div.ad.ad-below-video {
     margin-left: -10px;
