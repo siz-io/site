@@ -655,7 +655,18 @@ a.article-link:visited {
   .ad.ad-banner-post {
     margin-left: -5px;
     margin-bottom: 30px;
-    width: 740px;
+  }
+
+  .date {
+    text-align: center;
+  }
+
+  .thumb-container {
+    margin: auto;
+  }
+
+  .thumb-span {
+    text-align: center;
   }
 }
 
@@ -717,5 +728,13 @@ a.article-link:visited {
   .ad-taboola-2-3 {
     width: 98%;
     height: 1250px;
+  }
+
+   .date {
+    text-align: left;
+  }
+
+  .thumb-span {
+    text-align: left;
   }
 }

@@ -87,6 +87,7 @@
       return $('meta[property="ghost-asset:' + path + '"]').attr('content') || 'Asset not exposed'
     }
 
+    if (/iPad/i.test(navigator.userAgent)) { $('#taglist li:nth-child(6)').nextAll().remove() }
     if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
       $('#taglist li:nth-child(4)').nextAll().remove()
       $('.post-content .fluid-width-video-wrapper').after('<iframe scrolling="no" class="ad-taboola-1-3" src="' + ghostAsset('html/ad-taboola.html') + '&mode=thumbnails-a&id=taboola-below-video-player-thumbnails&placement=' + encodeURIComponent('Below Video Player Thumbnails') + '"></iframe>')
