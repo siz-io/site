@@ -8,9 +8,18 @@ var env = process.env
 var isDev = ((env.NODE_ENV || 'development') === 'development')
 var conf = {}
 var hbs = require(path.join(env.GHOST_SOURCE, 'node_modules', 'express-hbs'))
+var cheerio = require(path.join(env.GHOST_SOURCE, 'node_modules', 'cheerio'))
 
 hbs.registerHelper('env', function (param) {
   return env[param]
+})
+
+hbs.registerHelper('contentAndAds', function (argument) {
+  var content = hbs.handlebars.helpers.content.call(this)
+  $ = cheerio.load(content.toHTML())
+  $('iframe').after(hbs.handlebars.partials['ads/taboola']({mode: 'thumbnails-b', id: 'taboola-end-of-article-thumbnails', placement: 'End of Article Thumbnails'}))
+  $('.fb-video.fb_iframe_widget.fb_iframe_widget_fluid_desktop').after(hbs.handlebars.partials['ads/taboola']({mode: 'thumbnails-b', id: 'taboola-end-of-article-thumbnails', placement: 'End of Article Thumbnails'}))
+  return new hbs.SafeString($.html())
 })
 
 conf.server = {

@@ -45,6 +45,7 @@
 
     var renderLatestArticles = function (posts) {
       var $parent = $('.sidebox.latest-articles .sidebox-content')
+      var $ad = $('.ad.ad-banner-sidebar')
       if (!$parent) {
         return
       }
@@ -59,7 +60,7 @@
         var $a = $('<a class="latest-articles-link" href="' + p.link + '"><div class="date">' + dateStr + '</div><div>' + imgThumbnail + '<span class="thumb-span">' + p.title + '</span> ' + '</div></a>')
 
         if (i === 1) {
-          $parent.append(sidebarAd)
+          $parent.append($ad)
         }
 
         if (i === 4) {
@@ -90,14 +91,6 @@
     if (/iPad/i.test(navigator.userAgent)) { $('#taglist li:nth-child(6)').nextAll().remove() }
     if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
       $('#taglist li:nth-child(4)').nextAll().remove()
-      $('.post-content .fluid-width-video-wrapper').after('<iframe scrolling="no" class="ad-taboola-1-3" src="' + ghostAsset('html/ad-taboola.html') + '&mode=thumbnails-a&id=taboola-below-video-player-thumbnails&placement=' + encodeURIComponent('Below Video Player Thumbnails') + '"></iframe>')
-      $('.post-content .fb-video').after('<iframe scrolling="no" class="ad-taboola-1-3" src="' + ghostAsset('html/ad-taboola.html') + '"></iframe>')
-    } else {
-      $('.post-content .fluid-width-video-wrapper').after('<iframe scrolling="no" class="ad-taboola-1-3" src="' + ghostAsset('html/ad-taboola.html') + '&mode=thumbnails-a&id=taboola-below-video-player-thumbnails&placement=' + encodeURIComponent('Below Video Player Thumbnails') + '"></iframe>')
-      $('.post-content .fb-video').after('<iframe scrolling="no" class="ad-taboola-1-3" src="' + ghostAsset('html/ad-taboola.html') + '"></iframe>')
-
-      $('.article-link').first().before('<iframe class="ad ad-banner-top" src="' + ghostAsset('html/ad-criteo.html') + '&id=308277"></iframe>')
-      $('.content.clearfix').after('<iframe class="ad ad-banner-bottom" src="' + ghostAsset('html/ad-criteo.html') + '&id=312767"></iframe>')
     }
 
     var updateImageWidth = function () {

@@ -43,6 +43,17 @@
     </script>
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
 
+    <script type="text/javascript">
+      window._taboola = window._taboola || [];
+      _taboola.push({article:'auto'});
+      !function (e, f, u) {
+        e.async = 1;
+        e.src = u;
+        f.parentNode.insertBefore(e, f);
+      }(document.createElement('script'),
+      document.getElementsByTagName('script')[0],
+      '//cdn.taboola.com/libtrc/sizio/loader.js');
+    </script>
     {{! Ghost outputs important style and meta data with this tag }}
     {{ghost_head}}
 </head>
@@ -59,6 +70,7 @@
     </script>
     {{! Everything else gets inserted here }}
     {{{body}}}
+    <div class="ad ad-banner-bottom">{{> ads/criteo id="308277"}}</div>
 
     <footer class="site-footer clearfix">
          <section class="copyright"><a href="{{@blog.url}}">{{@blog.title}}</a> &copy; {{date format="YYYY"}}<a href="mailto:hello@siz.io"> | Contact</a> <a href="/privacy"> | Privacy Policy</a></section>
@@ -74,5 +86,9 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/fitvids/1.1.0/jquery.fitvids.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.xml2json/1.2/jquery.xml2json.js"></script>
     <script type="text/javascript" src="{{asset "js/main.js"}}"></script>
+    <script type="text/javascript">
+      window._taboola = window._taboola || [];
+      _taboola.push({flush: true});
+    </script>
 </body>
 </html>

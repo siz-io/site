@@ -1,28 +1,10 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <meta charset="utf-8">
-  <style>
-    body {
-      margin: 0;
-    }
-    iframe {
-      border: none;
-      overflow: hidden;
-      display: block;
-    }
-  </style>
-</head>
-<body>
-  <script type='text/javascript'>
-  var id = window.location.search.split("&id=")[1]
+<script type='text/javascript'>
   <!--//<![CDATA[
     document.MAX_ct0 ='';
     var m3_u = (location.protocol=='https:'?'https://cas.criteo.com/delivery/ajs.php?':'http://cas.criteo.com/delivery/ajs.php?');
     var m3_r = Math.floor(Math.random()*99999999999);
     document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
-    document.write ("zoneid=" + id);document.write("&amp;nodis=1");
+    document.write ("zoneid=" + {{id}});document.write("&amp;nodis=1");
     document.write ('&amp;cb=' + m3_r);
     if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
     document.write (document.charset ? '&amp;charset='+document.charset : (document.characterSet ? '&amp;charset='+document.characterSet : ''));
@@ -33,6 +15,5 @@
     }
     if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
     document.write ("'></scr"+"ipt>");
-  //]]>--></script>
-</body>
-</html>
+  //]]>-->
+</script>

@@ -38,6 +38,14 @@ iframe {
   margin: 0 auto;
 }
 
+.thumbnails-b .videoCube .video-label-box .video-title, .trc_rbox_header_span {
+  font-family: "Open Sans";
+  font-weight: 700;
+}
+.branding {
+  font-family: "Open Sans" !important;
+}
+
 .ad-taboola-1-3 {
   height: 300px;
   width: 660px;
@@ -45,7 +53,7 @@ iframe {
   overflow: hidden;
 }
 
-.ad-taboola-2-3 {
+#taboola-end-of-article-thumbnails {
   height: 600px;
   width: 660px;
   margin: auto;
@@ -96,7 +104,7 @@ iframe.instagram-media.instagram-media-rendered {
 .ad.ad-banner-bottom {
   height: 100px;
   width: 67%;
-  margin-left: 10%;
+  margin-left: 9%;
   margin-top: 20px;
   margin-bottom: 0;
 }

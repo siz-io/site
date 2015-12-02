@@ -1,0 +1,11 @@
+<div id="container-id"></div>
+<script type="text/javascript">
+  document.getElementById('container-id').id = '{{id}}'
+  window._taboola = window._taboola || [];
+  _taboola.push({
+    mode: '{{mode}}',
+    container: '{{id}}',
+    placement: '{{placement}}',
+    target_type: 'mix'
+  });
+</script>
