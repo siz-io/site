@@ -46,14 +46,7 @@ iframe {
   font-family: "Open Sans" !important;
 }
 
-.ad-taboola-1-3 {
-  height: 300px;
-  width: 660px;
-  margin: auto;
-  overflow: hidden;
-}
-
-#taboola-end-of-article-thumbnails {
+.ad-below-video {
   height: 600px;
   width: 660px;
   margin: auto;
@@ -722,10 +715,10 @@ a.article-link:visited {
     overflow: hidden;
   }
 
-
+/*
   div.ad.ad-below-video {
     margin-left: -10px;
-  }
+  }*/
 
   .ad-taboola-1-3 {
     width: 98%;
@@ -733,7 +726,7 @@ a.article-link:visited {
     height: 470px;
   }
 
-  .ad-taboola-2-3 {
+  .ad-below-video {
     width: 98%;
     height: 1250px;
   }
