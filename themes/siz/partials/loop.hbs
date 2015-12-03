@@ -1,4 +1,4 @@
-<div class="ad ad-banner-top">{{> ads/criteo id="308277"}}</div>
+{{#unless @root.isMobile}} <div class="ad ad-banner-top">{{> ads/criteo id="308277"}}</div> {{/unless}}
 {{! This is the post loop - each post will be output using this markup }}
 {{#foreach posts}}
 

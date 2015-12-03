@@ -10,21 +10,35 @@ var conf = {}
 var hbs = require(path.join(env.GHOST_SOURCE, 'node_modules', 'express-hbs'))
 var cheerio = require(path.join(env.GHOST_SOURCE, 'node_modules', 'cheerio'))
 
+var themeHandler = require(path.join(env.GHOST_SOURCE, 'core', 'server', 'middleware', 'theme-handler'))
+var oldGhostLocals = themeHandler.ghostLocals
+themeHandler.ghostLocals = function (req, res, next) {
+  oldGhostLocals(req, res, function () {})
+  res.locals.isMobile = /Mobile|iP(hone|od|ad)|Android|BlackBerry|IEMobile|Kindle|NetFront|Silk-Accelerated|(hpw|web)OS|Fennec|Minimo|Opera M(obi|ini)|Blazer|Dolfin|Dolphin|Skyfire|Zune/.test(req.headers['user-agent'])
+  next()
+}
+
 hbs.registerHelper('env', function (param) {
   return env[param]
 })
 
-hbs.registerHelper('contentAndAds', function () {
-  var content = hbs.handlebars.helpers.content.call(this)
+hbs.registerHelper('contentAndAds', function (options) {
+  var content = hbs.handlebars.helpers.content.call(this, options)
   var $ = cheerio.load(content.toHTML())
   $('iframe').after(hbs.handlebars.partials['ads/taboola']({mode: 'thumbnails-b', id: 'taboola-end-of-article-thumbnails', placement: 'End of Article Thumbnails'}))
   $('.fb-video').after(hbs.handlebars.partials['ads/taboola']({mode: 'thumbnails-b', id: 'taboola-end-of-article-thumbnails', placement: 'End of Article Thumbnails'}))
+  if (options.data.root.isMobile) {
+    $('iframe').before('<div class="ad ad-criteo-top">' + hbs.handlebars.partials['ads/criteo']({id: 320257}) + '</div>')
+    $('.fb-video').before('<div class="ad ad-criteo-top">' + hbs.handlebars.partials['ads/criteo']({id: 320257}) + '</div>')
+  }
   return new hbs.SafeString($.html())
 })
 
-hbs.registerHelper('sentenceExcerpt', function () {
-  var excerpt = hbs.handlebars.helpers.excerpt.call(this, 1000)
+hbs.registerHelper('sentenceExcerpt', function (options) {
+  options.hash.words = 1000
+  var excerpt = hbs.handlebars.helpers.excerpt.call(this, options)
   var sentenceExcerpt = excerpt.string.split(/(\?|\.|\!)(\s|$)/)
+  console.log(sentenceExcerpt)
   return new hbs.SafeString(sentenceExcerpt[0] + sentenceExcerpt[1])
 })
 
