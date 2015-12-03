@@ -22,6 +22,13 @@ hbs.registerHelper('contentAndAds', function (argument) {
   return new hbs.SafeString($.html())
 })
 
+hbs.registerHelper('myExcerpt', function (argument) {
+  var excerpt = hbs.handlebars.helpers.excerpt.call(this)
+  var $ = cheerio.load(excerpt.toHTML())
+  var myExcerpt = $.html().split('abc.*?!\d')
+  return new hbs.SafeString(myExcerpt[0])
+})
+
 conf.server = {
   host: '0.0.0.0',
   port: '2368'
