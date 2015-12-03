@@ -14,16 +14,16 @@ hbs.registerHelper('env', function (param) {
   return env[param]
 })
 
-hbs.registerHelper('contentAndAds', function (argument) {
+hbs.registerHelper('contentAndAds', function () {
   var content = hbs.handlebars.helpers.content.call(this)
   var $ = cheerio.load(content.toHTML())
   $('iframe').after(hbs.handlebars.partials['ads/taboola']({mode: 'thumbnails-b', id: 'taboola-end-of-article-thumbnails', placement: 'End of Article Thumbnails'}))
   $('.fb-video').after(hbs.handlebars.partials['ads/taboola']({mode: 'thumbnails-b', id: 'taboola-end-of-article-thumbnails', placement: 'End of Article Thumbnails'}))
   return new hbs.SafeString($.html())
-})
+})t
 
 hbs.registerHelper('sentenceExcerpt', function () {
-  var excerpt = hbs.handlebars.helpers.excerpt.call(this)
+  var excerpt = hbs.handlebars.helpers.excerpt.call(this, 1000)
   var sentenceExcerpt = excerpt.string.split(/(\?|\.|\!)(\s|$)/)
   return new hbs.SafeString(sentenceExcerpt[0] + sentenceExcerpt[1])
 })
