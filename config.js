@@ -24,8 +24,7 @@ hbs.registerHelper('contentAndAds', function (argument) {
 
 hbs.registerHelper('sentenceExcerpt', function (argument) {
   var excerpt = hbs.handlebars.helpers.excerpt.call(this)
-  var $ = cheerio.load(excerpt.toHTML())
-  var sentenceExcerpt = $.html().split(/(\?|\.|\!)(\s|$)/)
+  var sentenceExcerpt = excerpt.string.split(/(\?|\.|\!)(\s|$)/)
   return new hbs.SafeString(sentenceExcerpt[0] + sentenceExcerpt[1])
 })
 
