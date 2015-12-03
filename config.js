@@ -20,7 +20,7 @@ hbs.registerHelper('contentAndAds', function () {
   $('iframe').after(hbs.handlebars.partials['ads/taboola']({mode: 'thumbnails-b', id: 'taboola-end-of-article-thumbnails', placement: 'End of Article Thumbnails'}))
   $('.fb-video').after(hbs.handlebars.partials['ads/taboola']({mode: 'thumbnails-b', id: 'taboola-end-of-article-thumbnails', placement: 'End of Article Thumbnails'}))
   return new hbs.SafeString($.html())
-})t
+})
 
 hbs.registerHelper('sentenceExcerpt', function () {
   var excerpt = hbs.handlebars.helpers.excerpt.call(this, 1000)
