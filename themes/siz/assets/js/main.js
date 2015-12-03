@@ -58,14 +58,15 @@
         var imgThumbnail = p.content ? '<div class="thumb-container"><img src="' + p.content.url + '" class="thumb" /></div>' : ''
         var $a = $('<a class="latest-articles-link" href="' + p.link + '"><div class="date">' + dateStr + '</div><div>' + imgThumbnail + '<span class="thumb-span">' + p.title + '</span> ' + '</div></a>')
 
-        if (i === 1) {
-          $parent.append($ad)
+        if (i === 0) {
+          $parent.prepend($a)
+        } else {
+          $parent.append($a)
         }
 
         if (i === 4) {
           $a.addClass('last')
         }
-        $parent.append($a)
       }
       $parent.removeClass('loading')
     }
