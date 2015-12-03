@@ -10,24 +10,22 @@
   </ul>
 </div>
 
-{{#if posts}}
-  <div class="box sidebox latest-articles">
-    <div class="sidebox-title">Most Popular</div>
-    <div class="most">
-      {{#foreach posts}}
-        {{#if featured}}
-          <a class="article-link" href="{{url}}">
-            <div class="date">{{date format="DD MMMM YYYY"}}</div>
-            <div class="thumb-container"><img src="{{image}}" class="thumb" /></div>
-            <header class="post-header">
-              <h2 class="featured-post-title">{{{title}}}</h2>
-            </header>
-          </a>
-        {{/if}}
-      {{/foreach}}
-    </div>
+<div class="box sidebox latest-articles">
+  <div class="sidebox-title">Most Popular</div>
+  <div class="most">
+  {{#get "posts" include="featured"}}
+    {{#foreach posts}}
+      {{#if featured}}
+        <a class="article-link" href="{{url}}">
+          <div class="date">{{date format="DD MMMM YYYY"}}</div>
+          <div class="thumb-container"><img src="{{image}}" class="thumb" /></div>
+          <span class="thumb-span">{{{title}}}</span>
+        </a>
+      {{/if}}
+    {{/foreach}}
+  {{/get}}
   </div>
-{{/if}}
+</div>
 
 <div class="box sidebox latest-articles">
   <div class="sidebox-title">Latest Articles</div>
