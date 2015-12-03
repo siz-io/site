@@ -18,7 +18,7 @@ hbs.registerHelper('contentAndAds', function (argument) {
   var content = hbs.handlebars.helpers.content.call(this)
   $ = cheerio.load(content.toHTML())
   $('iframe').after(hbs.handlebars.partials['ads/taboola']({mode: 'thumbnails-b', id: 'taboola-end-of-article-thumbnails', placement: 'End of Article Thumbnails'}))
-  $('.fb-video.fb_iframe_widget.fb_iframe_widget_fluid_desktop').after(hbs.handlebars.partials['ads/taboola']({mode: 'thumbnails-b', id: 'taboola-end-of-article-thumbnails', placement: 'End of Article Thumbnails'}))
+  $('.fb-video').after(hbs.handlebars.partials['ads/taboola']({mode: 'thumbnails-b', id: 'taboola-end-of-article-thumbnails', placement: 'End of Article Thumbnails'}))
   return new hbs.SafeString($.html())
 })
 
