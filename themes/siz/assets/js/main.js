@@ -51,7 +51,6 @@
       }
 
       var min = Math.min(posts.length, 5)
-      var sidebarAd = /Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent) ? '<iframe class="ad ad-banner-sidebar" src="' + ghostAsset('html/ad-criteo.html') + '&id=308303"></iframe>' : '<iframe class="ad ad-banner-sidebar" src="' + ghostAsset('html/ad-criteo.html') + '&id=308302"></iframe>'
       for (var i = 0; i < min; i++) {
         var p = posts[i]
         var date = new Date(p.pubDate)
@@ -84,9 +83,9 @@
     var $postImg = $('.post-img')
     $postContent.fitVids()
 
-    var ghostAsset = function (path) {
-      return $('meta[property="ghost-asset:' + path + '"]').attr('content') || 'Asset not exposed'
-    }
+    // var ghostAsset = function (path) {
+    //   return $('meta[property="ghost-asset:' + path + '"]').attr('content') || 'Asset not exposed'
+    // }
 
     if (/iPad/i.test(navigator.userAgent)) { $('#taglist li:nth-child(6)').nextAll().remove() }
     if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
