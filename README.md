@@ -16,7 +16,7 @@
 
 ## Commands
 ### Run locally
-`docker run --rm -p 8080:2368 -v $(pwd):/var/lib/ghost ghost`
+`docker run -ti --rm -p 8080:2368 -v $(pwd):/var/lib/ghost ghost`
 
 ### Elastic Beanstalk
 Use the CLI as described [here](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb-cli3.html) Main commands :
