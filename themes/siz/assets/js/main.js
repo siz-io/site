@@ -45,7 +45,6 @@
 
     var renderLatestArticles = function (posts) {
       var $parent = $('.sidebox.latest-articles .sidebox-content')
-      var $ad = $('.ad.ad-banner-sidebar')
       if (!$parent) {
         return
       }
