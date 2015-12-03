@@ -22,7 +22,7 @@ hbs.registerHelper('contentAndAds', function (argument) {
   return new hbs.SafeString($.html())
 })
 
-hbs.registerHelper('sentenceExcerpt', function (argument) {
+hbs.registerHelper('sentenceExcerpt', function () {
   var excerpt = hbs.handlebars.helpers.excerpt.call(this)
   var sentenceExcerpt = excerpt.string.split(/(\?|\.|\!)(\s|$)/)
   return new hbs.SafeString(sentenceExcerpt[0] + sentenceExcerpt[1])
