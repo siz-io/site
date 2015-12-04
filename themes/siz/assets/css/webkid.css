@@ -573,6 +573,11 @@ section.post-content p {
   line-height: 30px;
 }
 
+section.post-content p:nth-child(1) {
+  padding-top: 0;
+  margin-top: -35px;
+}
+
 #article {
   padding: 0;
   padding-top: 3em;

@@ -92,6 +92,8 @@
       $('#taglist li:nth-child(4)').nextAll().remove()
     }
 
+    var sidebarAdTop = $('.ad.ad-banner-sidebar').offset().top
+
     var updateImageWidth = function () {
       var $this = $(this)
       var contentWidth = $postContent.outerWidth() // Width of the content
@@ -116,10 +118,17 @@
                 })
                 break
               case 3:
-                $postImg.css({
-                  'width': '214px',
-                  'display': 'inline-block'
-                })
+                if (!$postImg.prev('p')) {
+                  $postImg.css({
+                    'width': '214px',
+                    'display': 'inline-block'
+                  })
+                } else {
+                  $postImg.css({
+                    'width': '660px',
+                    'margin': 'auto'
+                  })
+                }
                 break
               case 4:
                 $postImg.css({
