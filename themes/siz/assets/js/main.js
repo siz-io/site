@@ -109,6 +109,7 @@
       if (windowTop - 150 > postFootterTop) {
         $('.sidebox-content').unstick()
       }
+
     })
 
     var updateImageWidth = function () {
