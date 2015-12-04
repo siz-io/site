@@ -92,8 +92,6 @@
       $('#taglist li:nth-child(4)').nextAll().remove()
     }
 
-    var sidebarAdTop = $('.ad.ad-banner-sidebar').offset().top
-
     var updateImageWidth = function () {
       var $this = $(this)
       var contentWidth = $postContent.outerWidth() // Width of the content
