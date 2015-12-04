@@ -689,7 +689,7 @@ a.article-link:visited {
 }
 
 @media (max-width: 750px) {
-  #taglist .mobile-hidden {
+  #taglist li {
     display: none;
   }
 

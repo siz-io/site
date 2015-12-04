@@ -90,6 +90,7 @@
     if (/iPad/i.test(navigator.userAgent)) { $('#taglist li:nth-child(6)').nextAll().remove() }
     if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
       $('#taglist li:nth-child(4)').nextAll().remove()
+      $('#taglist li').css('display', 'block')
     }
 
     var updateImageWidth = function () {
