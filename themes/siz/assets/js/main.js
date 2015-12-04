@@ -113,7 +113,7 @@
 
       if ($('#sidebar').height() > $('.post').height()) {
         if (windowTop - 150 > $('p').last().offset().top) {
-          $('#sidebar').css('height', scrollableHeight + 200 + 'px')
+          $('#sidebar').css('overflow', 'scroll')
         }
       }
     })
