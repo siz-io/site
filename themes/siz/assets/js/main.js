@@ -98,6 +98,7 @@
 
     $(window).scroll(function () {
       var windowTop = $(window).scrollTop()
+      var scrollableHeight = $(window).height() * 5
 
       if (windowTop - 310 > sidebarTop) {
         $('.sidebox-content').css({'position': 'fixed', 'top': -310 + 'px', 'background-color': '#FFF'})
@@ -107,7 +108,13 @@
       }
 
       if (windowTop - 150 > postFootterTop) {
-        $('.sidebox-content').css('position', 'static')
+        $('.sidebox-content').css({'position': 'static', 'overflow': 'hidden'})
+      }
+
+      if ($('#sidebar').height() > $('.post').height()) {
+        if (windowTop - 150 > $('p').last().offset().top) {
+          $('#sidebar').css('height', scrollableHeight + 200 + 'px')
+        }
       }
     })
 
