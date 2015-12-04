@@ -96,10 +96,20 @@ iframe.instagram-media.instagram-media-rendered {
 
 .ad.ad-banner-bottom {
   height: 100px;
-  width: 67%;
-  margin-left: 9%;
+  width: 90%;
+  margin-left: 4%;
   margin-top: 20px;
   margin-bottom: 0;
+}
+
+.ad.ad-banner-post-bottom {
+  height: 110px;
+  width: 100%;
+  margin-left: 0;
+  padding-left: 5%;
+  margin-bottom: 0;
+  background: #f5f5f5;
+  padding-top: 20px;
 }
 
 .ad.ad-banner-sidebar {
@@ -403,7 +413,6 @@ ul.taglist li a {
 .box {
   background: #fff;
   padding: 1em;
-  box-shadow: 0 1px 2px rgba(50,50,50,0.08);
 }
 
 .sidebox.about .most {
