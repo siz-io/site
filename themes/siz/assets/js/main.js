@@ -99,8 +99,8 @@
     $(window).scroll(function () {
       var windowTop = $(window).scrollTop()
 
-      if (windowTop - 260 > sidebarTop) {
-        $('.sidebox-content').css({'position': 'fixed', 'top': -260 + 'px', 'background-color': '#FFF'})
+      if (windowTop - 310 > sidebarTop) {
+        $('.sidebox-content').css({'position': 'fixed', 'top': -310 + 'px', 'background-color': '#FFF'})
         $('.sidebox-content').css('width', '364.1875px')
       } else {
         $('.sidebox-content').css('position', 'static')
