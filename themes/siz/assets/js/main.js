@@ -93,6 +93,25 @@
       $('#taglist li').css('display', 'block')
     }
 
+    var sidebarTop = $('.ad.ad-banner-sidebar').offset().top
+    var postFootterTop = $('.post-footer').offset().top
+
+    $(window).scroll(function () {
+      var windowTop = $(window).scrollTop()
+
+      if (windowTop - 260 > sidebarTop) {
+        $('.sidebox-content').sticky({topSpacing: -260})
+        $('.sidebox-content').css('width', '364.1875px')
+      } else {
+        $('.sidebox-content').css('position', 'static')
+      }
+
+      if (windowTop - 150 > postFootterTop) {
+        $('.sidebox-content').unstick()
+      }
+
+    })
+
     var updateImageWidth = function () {
       var $this = $(this)
       var contentWidth = $postContent.outerWidth() // Width of the content
