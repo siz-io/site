@@ -11,17 +11,18 @@
 
 {{> "header"}}
 
-<div class="ad ad-criteo-top">
-    {{> ads/criteo id="320257"}}
-</div>
-
+{{#if @root.isMobile}}
+    <div class="ad ad-criteo-top">
+        {{> ads/criteo id="320257"}}
+    </div>
+{{/if}}
 <main id="content" class="content" role="main">
 
     <div id="article" class="box {{#if image}}has-image{{/if}}">
     {{#unless @root.isMobile}}
-    <div class="ad ad-banner-post">
-        {{> ads/criteo id="308277"}}
-    </div>
+        <div class="ad ad-banner-post">
+            {{> ads/criteo id="308277"}}
+        </div>
     {{/unless}}
     <article class="{{post_class}}">
         <header class="post-header">
@@ -61,12 +62,9 @@
         <div class="fb-comments" data-href="{{@blog.url}}{{url}}" data-numposts="5" data-width="100%"></div>
 
     </article>
-
 </div>
 
-{{#unless @root.isMobile}}
 <div id="sidebar">{{> "sidebar"}}</div>
-{{/unless}}
 </main>
 
 {{/post}}

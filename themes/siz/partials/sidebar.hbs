@@ -27,16 +27,23 @@
   </div>
 </div>
 
- {{#unless @root.isMobile}}
-    <div class="ad ad-banner-middle-post">
-        {{> ads/criteo id="321469"}}
-    </div>
-  {{/unless}}
+{{#unless @root.isMobile}}
+  <div class="ad ad-banner-middle-sidebar">
+      {{> ads/criteo id="321469"}}
+  </div>
+{{/unless}}
 
+{{#if @root.isMobile}}
+  <div class="ad ad-banner-mobile-middle-sidebar">
+      {{> ads/criteo id="308303"}}
+  </div>
+{{/if}}
 <div class="box sidebox latest-articles">
   <div class="sidebox-title">Latest Articles</div>
   <div class="sidebox-content loading">
-    <div class="ad ad-banner-sidebar">{{> ads/criteo id="312766"}}</div>
+     {{#unless @root.isMobile}}
+        <div class="ad ad-banner-sidebar">{{> ads/criteo id="308302"}}</div>
+      {{/unless}}
     <div class="loader">
     </div>
   </div>

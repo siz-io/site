@@ -111,7 +111,7 @@ iframe.instagram-media.instagram-media-rendered {
   overflow: hidden;
 }
 
-.ad.ad-banner-bottom-sidebar {
+.ad.ad-banner-bottom-sidebar, .ad.ad-banner-middle-sidebar, .ad.ad-banner-mobile-middle-sidebar {
   width: 310px;
   height: 260px;
   margin: auto;
