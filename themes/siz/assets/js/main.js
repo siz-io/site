@@ -94,26 +94,23 @@
     }
 
     var sidebarTop = $('.ad.ad-banner-sidebar').offset().top
-    var postFootterTop = $('.post-footer').offset().top
 
     $(window).scroll(function () {
-      var windowTop = $(window).scrollTop()
-      var scrollableHeight = $(window).height() * 5
+      var scrollPoint = $(window).scrollTop() - 310
 
-      if (windowTop - 310 > sidebarTop) {
-        $('.sidebox-content').css({'position': 'fixed', 'top': -310 + 'px', 'background-color': '#FFF'})
-        $('.sidebox-content').css('width', '364.1875px')
-      } else {
-        $('.sidebox-content').css('position', 'static')
-      }
+      if ($('.post-content').length !== 0) {
+        if ($('#sidebar').height() < $('.post').height()) {
+          if (scrollPoint > sidebarTop) {
+            $('.sidebox-content').css({'position': 'fixed', 'top': -310 + 'px', 'background-color': '#FFF', 'width': '364.1875px'})
+          }
 
-      if (windowTop - 150 > postFootterTop) {
-        $('.sidebox-content').css({'position': 'static', 'overflow': 'hidden'})
-      }
+          if (scrollPoint > 2550) {
+            $('.sidebox-content').css({'position': 'static', 'top': 0})
+          }
 
-      if ($('#sidebar').height() > $('.post').height()) {
-        if (windowTop - 150 > $('p').last().offset().top) {
-          $('#sidebar').css('overflow', 'scroll')
+          if (scrollPoint < sidebarTop) {
+            $('.sidebox-content').css({'position': 'static', 'top': 0})
+          }
         }
       }
     })
