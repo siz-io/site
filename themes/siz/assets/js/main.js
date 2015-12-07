@@ -35,8 +35,8 @@
   }
 
   $document.ready(function () {
-    var sidebarTop = $('.ad.ad-banner-sidebar').offset().top - 310
-    $('.sidebox-content').sticky({topSpacing: -sidebarTop})
+    // var sidebarTop = $('.ad.ad-banner-sidebar').offset().top - 310
+    // $('.sidebox-content').sticky({topSpacing: -sidebarTop})
 
     var months = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC']
 
