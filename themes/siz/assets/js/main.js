@@ -35,7 +35,8 @@
   }
 
   $document.ready(function () {
-    var sidebarTop = $('.ad.ad-banner-sidebar').offset().top
+    // var sidebarTop = $('.ad.ad-banner-sidebar').offset().top - 310
+    // $('.sidebox-content').sticky({topSpacing: -sidebarTop})
 
     var months = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC']
 
@@ -94,26 +95,6 @@
       $('#taglist li:nth-child(4)').nextAll().remove()
       $('#taglist li').css('display', 'block')
     }
-
-    $(window).scroll(function () {
-      var scrollPoint = $(window).scrollTop() - 310
-
-      if ($('.post-content').length !== 0) {
-        if ($('#sidebar').height() < $('.post').height()) {
-          if (scrollPoint > sidebarTop) {
-            $('.sidebox-content').css({'position': 'fixed', 'top': -310 + 'px', 'background-color': '#FFF', 'width': '364.1875px'})
-          }
-
-          if (scrollPoint > 2550) {
-            $('.sidebox-content').css({'position': 'static', 'top': 0})
-          }
-
-          if (scrollPoint < sidebarTop) {
-            $('.sidebox-content').css({'position': 'static', 'top': 0})
-          }
-        }
-      }
-    })
 
     var updateImageWidth = function () {
       var $this = $(this)
