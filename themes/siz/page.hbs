@@ -12,20 +12,19 @@
 {{> "header"}}
 
 <main id="content" class="content" role="main">
-    <div id="article" class="box {{#if image}}has-image{{/if}}">
-        <article class="{{post_class}}">
-
-            <header class="post-header">
-                <h1 class="post-title">{{title}}</h1>
-                <section class="post-meta">
-                    <time class="post-date"></time>
-                </section>
-            </header>
-
-            <section class="post-content">
-                {{content}}
+<div id="article" class="box {{#if image}}has-image{{/if}}">
+    <article class="{{post_class}}">
+        <header class="post-header">
+            <h1 class="post-title">{{title}}</h1>
+            <section class="post-meta">
+                <time class="post-date"></time>
             </section>
-        </article>
+        </header>
+
+        <section class="post-content">
+            {{content}}
+        </section>
+    </article>
 </div>
 
 <div id="sidebar">{{> "sidebar"}}</div>
