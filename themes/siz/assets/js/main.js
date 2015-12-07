@@ -35,8 +35,10 @@
   }
 
   $document.ready(function () {
-    // var sidebarTop = $('.ad.ad-banner-sidebar').offset().top - 310
-    // $('.sidebox-content').sticky({topSpacing: -sidebarTop})
+    if ($('.post-content').length !== 0) {
+      $('.sidebar-container').sticky({topSpacing: -1450})
+      $('.sidebox-content').css({'width': '364.1875px', 'background-color': '#FFF', 'overflow': 'scroll', 'height': '1000px'})
+    }
 
     var months = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC']
 

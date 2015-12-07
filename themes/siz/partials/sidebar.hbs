@@ -1,54 +1,55 @@
-<div class="sidebox box social clearfix">
-  <ul>
-    <a href="https://www.facebook.com/siz.io" target="_blank" class="social-item fb"><li><i class="fa fa-facebook"></i></li></a>
-    
-    <a href="https://twitter.com/siz_io" target="_blank" class="social-item tw"><li><i class="fa fa-twitter"></i></li></a>
-        
-    <a href="/rss" target="_blank" class="social-item rss"><li><i class="fa fa-rss"></i></li></a>
+<div class="sidebar-container">
+  <div class="sidebox box social clearfix">
+    <ul>
+      <a href="https://www.facebook.com/siz.io" target="_blank" class="social-item fb"><li><i class="fa fa-facebook"></i></li></a>
+      
+      <a href="https://twitter.com/siz_io" target="_blank" class="social-item tw"><li><i class="fa fa-twitter"></i></li></a>
+          
+      <a href="/rss" target="_blank" class="social-item rss"><li><i class="fa fa-rss"></i></li></a>
 
-    <a href="/" class="social-item home"><li><i class="fa fa-home"></i></li></a>
-  </ul>
-</div>
-
-<div class="box sidebox latest-articles">
-  <div class="sidebox-title">Most Popular</div>
-  <div class="most">
-  {{#get "posts" include="featured"}}
-    {{#foreach posts}}
-      {{#if featured}}
-        <a class="article-link" href="{{url}}">
-          <div class="date">{{date format="DD MMMM YYYY"}}</div>
-          <div class="thumb-container"><img src="{{image}}" class="thumb" /></div>
-          <span class="thumb-span">{{{title}}}</span>
-        </a>
-      {{/if}}
-    {{/foreach}}
-  {{/get}}
+      <a href="/" class="social-item home"><li><i class="fa fa-home"></i></li></a>
+    </ul>
   </div>
-</div>
 
-{{#unless @root.isMobile}}
-  <div class="ad ad-banner-middle-sidebar">
-      {{> ads/criteo id="321469"}}
-  </div>
-{{/unless}}
-
-{{#if @root.isMobile}}
-  <div class="ad ad-banner-mobile-middle-sidebar">
-      {{> ads/criteo id="308303"}}
-  </div>
-{{/if}}
-
-<div class="box sidebox latest-articles">
-  <div class="sidebox-title">Latest Articles</div>
-  <div class="sidebox-content loading">
-     {{#unless @root.isMobile}}
-        <div class="ad ad-banner-sidebar">{{> ads/criteo id="308302"}}</div>
-      {{/unless}}
-    <div class="loader">
+  <div class="box sidebox latest-articles">
+    <div class="sidebox-title">Most Popular</div>
+    <div class="most">
+    {{#get "posts" include="featured"}}
+      {{#foreach posts}}
+        {{#if featured}}
+          <a class="article-link" href="{{url}}">
+            <div class="date">{{date format="DD MMMM YYYY"}}</div>
+            <div class="thumb-container"><img src="{{image}}" class="thumb" /></div>
+            <span class="thumb-span">{{{title}}}</span>
+          </a>
+        {{/if}}
+      {{/foreach}}
+    {{/get}}
     </div>
   </div>
+
+  {{#unless @root.isMobile}}
+    <div class="ad ad-banner-middle-sidebar">
+        {{> ads/criteo id="321469"}}
+    </div>
+  {{/unless}}
+
+  {{#if @root.isMobile}}
+    <div class="ad ad-banner-mobile-middle-sidebar">
+        {{> ads/criteo id="308303"}}
+    </div>
+  {{/if}}
+
+  <div class="box sidebox latest-articles">
+    <div class="sidebox-title">Latest Articles</div>
+    <div class="sidebox-content loading">
+       {{#unless @root.isMobile}}
+          <div class="ad ad-banner-sidebar">{{> ads/criteo id="308302"}}</div>
+        {{/unless}}
+      <div class="loader">
+      </div>
+    </div>
+  </div>
+  
+  {{#unless @root.isMobile}}<div class="ad ad-banner-bottom-sidebar">{{> ads/criteo id="312766"}}</div> {{/unless}}
 </div>
-
-
-{{#unless @root.isMobile}}<div class="ad ad-banner-bottom-sidebar">{{> ads/criteo id="312766"}}</div> {{/unless}}

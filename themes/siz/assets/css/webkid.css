@@ -46,6 +46,10 @@ iframe {
   font-family: "Open Sans" !important;
 }
 
+.sidebar-container {
+  width: 364.1875px;
+}
+
 .ad-below-video {
   width: 660px;
   margin: auto;
