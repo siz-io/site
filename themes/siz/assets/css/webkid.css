@@ -47,7 +47,6 @@ iframe {
 }
 
 .ad-below-video {
-  height: 600px;
   width: 660px;
   margin: auto;
   overflow: hidden;
@@ -78,24 +77,22 @@ iframe.instagram-media.instagram-media-rendered {
 }
 
 .ad.ad-banner-top {
-  height: 100px;
   width: 94%;
   margin: auto;
   margin-bottom: 30px;
 }
 
 .ad.ad-banner-post {
-  height: 130px;
   position: relative;
   width: 101%;
   padding-left: 30px;
+  padding-bottom: 30px;
   margin: auto;
   background-color: #F5F5F5;
   margin-bottom: 30px;
 }
 
 .ad.ad-banner-bottom {
-  height: 100px;
   width: 90%;
   margin-left: 4%;
   margin-top: 20px;
@@ -103,7 +100,6 @@ iframe.instagram-media.instagram-media-rendered {
 }
 
 .ad.ad-banner-post-bottom {
-  height: 110px;
   width: 100%;
   margin-left: 0;
   padding-left: 5%;
@@ -114,7 +110,6 @@ iframe.instagram-media.instagram-media-rendered {
 
 .ad.ad-banner-sidebar {
   width: 310px;
-  height: 260px;
   margin: auto;
   margin-bottom: 30px;
   border-bottom: 1px solid #eee;
@@ -123,7 +118,6 @@ iframe.instagram-media.instagram-media-rendered {
 
 .ad.ad-banner-bottom-sidebar, .ad.ad-banner-middle-sidebar, .ad.ad-banner-mobile-middle-sidebar {
   width: 310px;
-  height: 260px;
   margin: auto;
   margin-bottom: 30px;
   overflow: hidden;

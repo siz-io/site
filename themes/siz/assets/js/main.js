@@ -35,15 +35,7 @@
   }
 
   $document.ready(function () {
-    if ($('.adsbygoogle').attr('data-ad-client') === undefined) {
-      $('.ad-banner-post').remove()
-      $('.ad-banner-middle-sidebar').remove()
-      $('.ad-banner-sidebar').remove()
-      $('.ad-banner-bottom-sidebar').remove()
-      $('#taboola-end-of-article-thumbnails').remove()
-    } else {
-      var sidebarTop = $('.ad.ad-banner-sidebar').offset().top
-    }
+    var sidebarTop = $('.ad.ad-banner-sidebar').offset().top
 
     var months = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC']
 
