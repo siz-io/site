@@ -35,9 +35,9 @@
   }
 
   $document.ready(function () {
-    if ($('.post-content').length !== 0) {
+    if ($('.post-content').length) { // Check whether we are on a post page
       $('.sidebar-container').sticky({topSpacing: -1450})
-      $('.sidebox-content').css({'width': '364.1875px', 'background-color': '#FFF', 'overflow': 'scroll', 'height': '1000px'})
+      $('.sidebox-content').css({'width': '364.1875px', 'background-color': '#FFF', 'height': 'auto'})
     }
 
     var months = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC']
