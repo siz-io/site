@@ -128,10 +128,17 @@
               case 1:
                 break
               case 2:
-                $postImg.css({
-                  'width': '327px',
-                  'display': 'inline-block'
-                })
+                if (!$postImg.prev('p')) {
+                  $postImg.css({
+                    'width': '327px',
+                    'display': 'inline-block'
+                  })
+                } else {
+                  $postImg.css({
+                    'width': '660px',
+                    'margin': 'auto'
+                  })
+                }
                 break
               case 3:
                 if (!$postImg.prev('p')) {
