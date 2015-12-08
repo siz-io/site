@@ -598,6 +598,7 @@ section.post-content p:nth-child(1) {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -o-box-sizing: border-box;
+  margin-bottom: 2.5em;
 }
 
 #article.has-image {
@@ -656,6 +657,10 @@ a.article-link:visited {
     width: 100%;
   }
 
+  .sidebar-container {
+    width: 100%;
+  }
+
   div#sidebar {
     margin-top: 0px;
   }
@@ -695,6 +700,10 @@ a.article-link:visited {
 @media (max-width: 750px) {
   #taglist li {
     display: none;
+  }
+
+  .sidebar-container {
+    width: 100%;
   }
 
   div#sidebar {

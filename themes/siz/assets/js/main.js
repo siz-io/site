@@ -35,21 +35,23 @@
   }
 
   $document.ready(function () {
-    var sidebarTop = $('.ad.ad-banner-middle-sidebar').offset().top - 150
+    if (!(/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent))) {
+      var sidebarTop = $('.ad.ad-banner-middle-sidebar').offset().top - 170
 
-    if ($('.post-content').length) { // Check whether we are on a post page
-      if ($('#article').height() > $('#sidebar').height()) {
-        $('#article').css('margin-bottom', '450px')
+      if ($('.post-content').length) { // Check whether we are on a post page
+        if ($('#article').height() > $('#sidebar').height()) {
+          $('#article').css('margin-bottom', '450px')
+        }
+        $('.sidebar-container').sticky({topSpacing: -sidebarTop})
+        $('.sidebox-content').css('height', 'auto')
       }
-      $('.sidebar-container').sticky({topSpacing: -sidebarTop})
-      $('.sidebox-content').css('height', 'auto')
+
+      $(window).scroll(function () {
+        if ($(window).offset().top > $('.share').offset().top) {
+          $('.sidebar-container').unstick()
+        }
+      })
     }
-
-    $(window).scroll(function () {
-      if ($(window).offset().top > $('.share').offset().top) {
-        $('.sidebar-container').unstick()
-      }
-    })
 
     var months = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC']
 
@@ -73,16 +75,17 @@
         var imgThumbnail = p.content ? '<div class="thumb-container"><img src="' + p.content.url + '" class="thumb" /></div>' : ''
         var $a = $('<a class="latest-articles-link" href="' + p.link + '"><div class="date">' + dateStr + '</div><div>' + imgThumbnail + '<span class="thumb-span">' + p.title + '</span> ' + '</div></a>')
 
-        // if (i === 0) {
-        //   $parent.prepend($a)
-        // } else {
-        //   $parent.append($a)
-        // }
+        // Do this if you have an ad on the sidebar
+
+        if (i === 0) {
+          $parent.prepend($a)
+        } else {
+          $parent.append($a)
+        }
 
         if (i === 4) {
           $a.addClass('last')
         }
-        $parent.append($a)
       }
       $parent.removeClass('loading')
     }
