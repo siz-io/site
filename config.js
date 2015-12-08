@@ -30,6 +30,9 @@ hbs.registerHelper('contentAndAds', function (options) {
   if (options.data.root.isMobile) {
     $('iframe').before('<div class="ad ad-criteo-above-video">' + hbs.handlebars.partials['ads/criteo']({id: 320766}) + '</div>')
     $('.fb-video').before('<div class="ad ad-criteo-above-video">' + hbs.handlebars.partials['ads/criteo']({id: 320766}) + '</div>')
+  } else {
+    $('iframe').before('<div class="ad ad-criteo-desktop-above-video">' + hbs.handlebars.partials['ads/criteo']({id: 322879}) + '</div>')
+    $('.fb-video').before('<div class="ad ad-criteo-desktop-above-video">' + hbs.handlebars.partials['ads/criteo']({id: 322879}) + '</div>')
   }
   return new hbs.SafeString($.html())
 })

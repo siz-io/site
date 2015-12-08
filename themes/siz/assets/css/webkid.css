@@ -132,6 +132,13 @@ iframe.instagram-media.instagram-media-rendered {
   margin-bottom: 20px;
 }
 
+.ad.ad-criteo-desktop-above-video {
+  width: 104%;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 .thumb-container {
   position: relative;
   overflow: hidden;
@@ -591,7 +598,6 @@ section.post-content p:nth-child(1) {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -o-box-sizing: border-box;
-  margin-bottom: 2.5em;
 }
 
 #article.has-image {
