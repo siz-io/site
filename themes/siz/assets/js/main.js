@@ -35,10 +35,21 @@
   }
 
   $document.ready(function () {
+    var sidebarTop = $('.ad.ad-banner-middle-sidebar').offset().top - 150
+
     if ($('.post-content').length) { // Check whether we are on a post page
-      $('.sidebar-container').sticky({topSpacing: -1450})
-      $('.sidebox-content').css({'width': '364.1875px', 'background-color': '#FFF', 'height': 'auto'})
+      if ($('#article').height() > $('#sidebar').height()) {
+        $('#article').css('margin-bottom', '450px')
+      }
+      $('.sidebar-container').sticky({topSpacing: -sidebarTop})
+      $('.sidebox-content').css('height', 'auto')
     }
+
+    $(window).scroll(function () {
+      if ($(window).offset().top > $('.share').offset().top) {
+        $('.sidebar-container').unstick()
+      }
+    })
 
     var months = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC']
 
