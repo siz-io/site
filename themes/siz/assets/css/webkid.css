@@ -128,6 +128,7 @@ iframe.instagram-media.instagram-media-rendered {
 }
 
 .ad.ad-criteo-above-video {
+  width: 102%;
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -747,6 +748,14 @@ a.article-link:visited {
 
    .date {
     text-align: left;
+  }
+
+  .thumb {
+    width: 300px;
+  }
+
+  .thumb-container {
+    margin-bottom: 10px;
   }
 
   .thumb-span {
