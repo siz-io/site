@@ -651,9 +651,14 @@ a.article-link:hover,
 a.article-link:visited {
   text-decoration: none;
 }
-
+/* Small Desktop Screens */
+@media (min-width: 900px) and (max-width: 1300px) {
+  #articles {
+    width: 59%;
+  }
+}
 /*Tablet*/
-@media (max-width: 1150px) {
+@media (max-width: 900px) {
   #sidebar, #articles, #article {
     width: 100%;
   }
