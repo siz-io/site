@@ -14,7 +14,7 @@
   <div class="box sidebox latest-articles">
     <div class="sidebox-title">Most Popular</div>
     <div class="most">
-    {{#get "posts" include="featured" limit="3"}}
+    {{#get "posts" filter="featured:true" limit="3" as |featured|}}
       {{#foreach posts}}
         {{#if featured}}
           <a class="article-link" href="{{url}}">
