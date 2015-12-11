@@ -35,8 +35,8 @@
   }
 
   $document.ready(function () {
-    $('iframe#instagram-embed-0').css({'width': '660px', 'margin': 'auto'})
     if (!(/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent))) {
+      $('iframe#instagram-embed-0').css({'width': '660px', 'margin': 'auto'})
       var sidebarTop = $('.ad.ad-banner-middle-sidebar').offset().top - 170
 
       if ($('.post-content').length) { // Check whether we are on a post page
