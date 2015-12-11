@@ -65,6 +65,7 @@ iframe {
   width: 94%;
   margin: auto;
   margin-bottom: 30px;
+
 }
 
 .ad.ad-banner-post {
@@ -101,6 +102,10 @@ iframe {
   overflow: hidden;
 }
 
+.adsbygoogle {
+  border: 1px solid #000;
+}
+
 .ad.ad-banner-bottom-sidebar, .ad.ad-banner-middle-sidebar, .ad.ad-banner-mobile-middle-sidebar {
   width: 310px;
   margin: auto;
@@ -112,6 +117,8 @@ iframe {
   width: 102%;
   margin-top: 20px;
   margin-bottom: 20px;
+  border: 1px solid #000;
+
 }
 
 .ad.ad-criteo-desktop-above-video {
@@ -119,6 +126,7 @@ iframe {
   margin: auto;
   margin-top: 20px;
   margin-bottom: 20px;
+  border: 1px solid #000;
 }
 
 .thumb-container {

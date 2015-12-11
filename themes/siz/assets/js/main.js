@@ -35,6 +35,9 @@
   }
 
   $document.ready(function () {
+    $('.ad-banner-middle-sidebar .adsbygoogle').css({'width': '302px', 'height': '252px'})
+    $('.ad-banner-top .adsbygoogle').css({'width': '730', 'height': '92px'})
+    $('.ad-banner-post .adsbygoogle').css({'width': '730', 'height': '92px'})
     if (!(/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent))) {
       $('iframe#instagram-embed-0').css({'width': '660px', 'margin': 'auto'})
       var sidebarTop = $('.ad.ad-banner-middle-sidebar').offset().top - 170
