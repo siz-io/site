@@ -45,14 +45,6 @@
         }
         $('.sidebar-container').sticky({topSpacing: -sidebarTop})
         $('.sidebox-content').css('height', 'auto')
-
-        if ($('.ad-banner-middle-sidebar').height()) {
-          $(window).scroll(function () {
-            if ($(window).scrollTop() > $('.share').offset().top) {
-              $('.sidebar-container').unstick()
-            }
-          })
-        }
       }
     }
 
