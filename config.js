@@ -25,14 +25,20 @@ hbs.registerHelper('env', function (param) {
 hbs.registerHelper('contentAndAds', function (options) {
   var content = hbs.handlebars.helpers.content.call(this, options)
   var $ = cheerio.load(content.toHTML())
-  $('.instagram-media').after(hbs.handlebars.partials['ads/taboola']({mode: 'thumbnails-b', id: 'taboola-end-of-article-thumbnails', placement: 'End of Article Thumbnails'}))
-  $('iframe').after(hbs.handlebars.partials['ads/taboola']({mode: 'thumbnails-b', id: 'taboola-end-of-article-thumbnails', placement: 'End of Article Thumbnails'}))
-  $('.fb-video').after(hbs.handlebars.partials['ads/taboola']({mode: 'thumbnails-b', id: 'taboola-end-of-article-thumbnails', placement: 'End of Article Thumbnails'}))
+
   if (options.data.root.isMobile) {
+    $('.instagram-media').after('<div class="ad ad-criteo-bellow-video">' + hbs.handlebars.partials['ads/criteo']({id: 328682}) + '</div>')
+    $('iframe').after('<div class="ad ad-criteo-bellow-video">' + hbs.handlebars.partials['ads/criteo']({id: 328682}) + '</div>')
+    $('.fb-video').after('<div class="ad ad-criteo-bellow-video">' + hbs.handlebars.partials['ads/criteo']({id: 328682}) + '</div>')
+
     $('.instagram-media').before('<div class="ad ad-criteo-above-video">' + hbs.handlebars.partials['ads/criteo']({id: 320766}) + '</div>')
     $('iframe').before('<div class="ad ad-criteo-above-video">' + hbs.handlebars.partials['ads/criteo']({id: 320766}) + '</div>')
     $('.fb-video').before('<div class="ad ad-criteo-above-video">' + hbs.handlebars.partials['ads/criteo']({id: 320766}) + '</div>')
   } else {
+    $('.instagram-media').after(hbs.handlebars.partials['ads/taboola']({mode: 'thumbnails-b', id: 'taboola-end-of-article-thumbnails', placement: 'End of Article Thumbnails'}))
+    $('iframe').after(hbs.handlebars.partials['ads/taboola']({mode: 'thumbnails-b', id: 'taboola-end-of-article-thumbnails', placement: 'End of Article Thumbnails'}))
+    $('.fb-video').after(hbs.handlebars.partials['ads/taboola']({mode: 'thumbnails-b', id: 'taboola-end-of-article-thumbnails', placement: 'End of Article Thumbnails'}))
+
     $('.instagram-media').before('<div class="ad ad-criteo-desktop-above-video">' + hbs.handlebars.partials['ads/criteo']({id: 322879}) + '</div>')
     $('iframe').before('<div class="ad ad-criteo-desktop-above-video">' + hbs.handlebars.partials['ads/criteo']({id: 322879}) + '</div>')
     $('.fb-video').before('<div class="ad ad-criteo-desktop-above-video">' + hbs.handlebars.partials['ads/criteo']({id: 322879}) + '</div>')

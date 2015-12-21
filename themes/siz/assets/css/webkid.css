@@ -113,11 +113,10 @@ iframe {
   overflow: hidden;
 }
 
-.ad.ad-criteo-above-video {
+.ad.ad-criteo-above-video, .ad.ad-criteo-bellow-video {
   width: 102%;
   margin-top: 20px;
   margin-bottom: 20px;
-
 }
 
 .ad.ad-criteo-desktop-above-video {
