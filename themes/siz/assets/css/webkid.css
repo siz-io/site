@@ -737,6 +737,10 @@ a.article-link:visited {
     height: 1400px;
   }
 
+  .ad.ad-criteo-bellow-video {
+    width: 103%;
+  }
+
   .ad-below-video.taboola {
     width: 98%;
     height: 1350px;
