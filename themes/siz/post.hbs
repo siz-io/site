@@ -59,6 +59,9 @@
                 </a>
             </section>
         </footer>
+        {{#if @root.isMobile}}
+            {{> ads/taboola mode="thumbnails-b" id="taboola-end-of-article-thumbnails" placement="End of Article Thumbnails"}}
+        {{/if}}
         <div class="fb-comments" data-href="{{@blog.url}}{{url}}" data-numposts="5" data-width="100%"></div>
 
     </article>
