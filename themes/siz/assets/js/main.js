@@ -40,6 +40,10 @@
     $('.ad-banner-post .adsbygoogle').css({'width': '730', 'height': '92px'})
     $('.ad-criteo-desktop-above-video .adsbygoogle').css({'width': '730', 'height': '92px'})
     $('.ad-criteo-desktop-bellow-video .adsbygoogle').css({'width': '730', 'height': '92px'})
+    if ($('.post-content p').text().match(/"([^""]+)"/)) {
+      $('.post-content p').css('text-align', 'inherit')
+    }
+
     if (!(/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent))) {
       $('iframe#instagram-embed-0').css({'width': '660px', 'margin': 'auto'})
       var sidebarTop = $('.ad.ad-banner-middle-sidebar').offset().top - 170
