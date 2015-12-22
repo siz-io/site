@@ -38,6 +38,8 @@
     $('.ad-banner-middle-sidebar .adsbygoogle').css({'width': '302px', 'height': '252px'})
     $('.ad-banner-top .adsbygoogle').css({'width': '730', 'height': '92px'})
     $('.ad-banner-post .adsbygoogle').css({'width': '730', 'height': '92px'})
+    $('.ad-banner-bottom .adsbygoogle').css({'width': '730', 'height': '92px'})
+    $('.ad-banner-post-bottom .adsbygoogle').css({'width': '730', 'height': '92px'})
     $('.ad-criteo-desktop-above-video .adsbygoogle').css({'width': '730', 'height': '92px'})
     $('.ad-criteo-desktop-bellow-video .adsbygoogle').css({'width': '730', 'height': '92px'})
     if ($('.post-content p').text().match(/"([^""]+)"/)) {
