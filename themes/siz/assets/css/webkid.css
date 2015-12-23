@@ -721,6 +721,16 @@ a.article-link:visited {
     overflow: hidden;
   }
 
+  .ad-criteo-home-top {
+    display: block;
+    width: 310px;
+    height: 260px;
+    margin: auto;
+    margin-top: -15px;
+    margin-bottom: 25px;
+    overflow: hidden;
+  }
+
 /*
   div.ad.ad-below-video {
     margin-left: -10px;
