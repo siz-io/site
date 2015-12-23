@@ -36,6 +36,7 @@
 
   $document.ready(function () {
     $('ins#aswift_0_expand').css('border', '1px solid #000')
+    $('iframe#google_ads_frame1').css('border', '1px solid #000')
     $('.ad-banner-middle-sidebar .adsbygoogle').css({'width': '302px', 'height': '252px'})
     $('.ad-criteo-above-video .adsbygoogle').css({'width': '302px', 'height': '252px'})
     $('.ad-criteo-bellow-video .adsbygoogle').css({'width': '302px', 'height': '252px'})
@@ -47,6 +48,11 @@
     $('.ad-criteo-desktop-bellow-video .adsbygoogle').css({'width': '730', 'height': '92px'})
     if ($('.post-content p').text().match(/"([^""]+)"/)) {
       $('.post-content p').css('text-align', 'inherit')
+    }
+
+    if ((/Android/i.test(navigator.userAgent))) {
+      $('.ad-criteo-above-video').css('margin-left', '-10px')
+      $('.ad-criteo-bellow-video').css('margin-left', '-10px')
     }
 
     if (!(/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent))) {
