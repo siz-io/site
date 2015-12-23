@@ -35,6 +35,7 @@
   }
 
   $document.ready(function () {
+    $('ins#aswift_0_expand').css('border', '1px solid #000')
     $('.ad-banner-middle-sidebar .adsbygoogle').css({'width': '302px', 'height': '252px'})
     $('.ad-banner-top .adsbygoogle').css({'width': '730', 'height': '92px'})
     $('.ad-banner-post .adsbygoogle').css({'width': '730', 'height': '92px'})
