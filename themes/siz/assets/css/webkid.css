@@ -114,7 +114,7 @@ iframe {
 }
 
 .ad.ad-criteo-above-video, .ad.ad-criteo-bellow-video {
-  width: 103%;
+  width: 104%;
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -737,8 +737,8 @@ a.article-link:visited {
     height: 1400px;
   }
 
-  .ad.ad-criteo-bellow-video {
-    width: 103%;
+  .ad.ad-criteo-bellow-video, .ad.ad-criteo-above-video {
+    width: 104%;
   }
 
   .ad-below-video.taboola {
