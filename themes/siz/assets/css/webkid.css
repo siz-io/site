@@ -581,7 +581,7 @@ section.post-content p:nth-child(1) {
 
 #article {
   padding: 0;
-  padding-top: 3em;
+  padding-top: 0;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -o-box-sizing: border-box;
