@@ -31,6 +31,10 @@
         {{> ads/criteo id="321469"}}
     </div>
   {{/unless}}
+  
+  {{#if @root.isMobile}}
+    {{> ads/taboola mode="thumbnails-a" id="taboola-below-video-player-thumbnails" placement="Below Video Player Thumbnails"}}
+  {{/if}}
 
   <div class="box sidebox latest-articles">
     <div class="sidebox-title">Latest Articles</div>
