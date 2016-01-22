@@ -752,6 +752,10 @@ a.article-link:visited {
     height: 260px;
   }
 
+  .ad-below-video.taboola.thumb-a {
+    height: 550px;
+  }
+
   .ad-below-video.taboola {
     width: 98%;
     height: 1350px;
