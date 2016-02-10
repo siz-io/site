@@ -38,6 +38,11 @@ iframe {
   margin: 0 auto;
 }
 
+.instagram-media.instagram-media-rendered {
+  width: 660px !important;
+  margin: auto !important;
+}
+
 .thumbnails-b .videoCube .video-label-box .video-title, .trc_rbox_header_span {
   font-family: "Open Sans";
   font-weight: 700;
